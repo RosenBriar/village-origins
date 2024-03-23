@@ -1,0 +1,20 @@
+{
+    "name": "Coreforged",
+    "description": "An animated smeltery, left unchecked by a blacksmith. Should the fire inside it go out, it will become dormant once more.",
+    "icon": "minecraft:netherite_scrap",
+    "impact": 3,
+    "powers": [
+        "unique:cf_heat",
+        "unique:cf_warmup",
+        "unique:cf_burntfood",
+        "unique:cf_fuel",
+        "unique:cf_sink",
+        "unique:cf_cooldown",
+        "unique:cf_heatsink",
+        "unique:cf_assembly",
+        "unique:cf_enhancement",
+        "unique:cf_enhancement_logic",
+        "unique:cf_enhance",
+        "unique:cf_oreforge"
+    ]
+}

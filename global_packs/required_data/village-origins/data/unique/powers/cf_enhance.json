@@ -1,0 +1,461 @@
+{
+    "type": "origins:multiple",
+    "hidden": true,
+    "one_fist_of_iron": {
+        "type": "origins:edible_item",
+        "hidden": "true",
+        "item_condition": {
+            "type": "origins:ingredient",
+            "ingredient": {
+                "item": "minecraft:iron_ingot"
+            }
+        },
+        "consume_sound": "minecraft:block.copper.place",
+        "entity_action": {
+            "type": "origins:and",
+            "actions": [{
+                "type": "origins:play_sound",
+                "sound": "minecraft:block.copper.step",
+                "volume": 1
+            }, {
+                "type": "origins:modify_resource",
+                "resource": "unique:cf_enhancement",
+                "modifier": {
+                    "operation": "multiply_total",
+                    "value": -1
+                }
+            }, {
+                "type": "origins:modify_resource",
+                "resource": "unique:cf_enhancement",
+                "modifier": {
+                    "operation": "addition",
+                    "value": 1
+                }
+            }, {
+                "type": "origins:modify_resource",
+                "resource": "unique:cf_heat",
+                "modifier": {
+                    "operation": "add_base_early",
+                    "value": -50
+                }
+            }]
+        },
+        "consuming_time_modifier": {
+            "operation": "multiply_base_additive",
+            "value": 1
+        },
+        "food_component": {
+            "hunger": 0,
+            "saturation": 0,
+            "always_edible": true
+        },
+        "item_action": {
+            "type": "origins:consume",
+            "amount": 1
+        },
+        "condition": {
+            "type": "origins:and",
+            "conditions": [{
+                "type": "origins:resource",
+                "resource": "unique:cf_enhancement",
+                "comparison": "==",
+                "compare_to": 1,
+                "inverted": true
+            }, {
+                "type": "origins:resource",
+                "resource":"unique:cf_heat",
+                "comparison": ">=",
+                "compare_to": 50
+            }]
+        }
+    },
+    "the_other_of_steel": {
+        "type": "origins:edible_item",
+        "hidden": "true",
+        "item_condition": {
+            "type": "origins:ingredient",
+            "ingredient": {
+                "item": "minecraft:netherite_ingot"
+            }
+        },
+        "consume_sound": "minecraft:block.netherite.place",
+        "entity_action": {
+            "type": "origins:and",
+            "actions": [{
+                "type": "origins:play_sound",
+                "sound": "minecraft:block.netherite.step",
+                "volume": 1
+            }, {
+                "type": "origins:modify_resource",
+                "resource": "unique:cf_enhancement",
+                "modifier": {
+                    "operation": "multiply_total",
+                    "value": -1
+                }
+            }, {
+                "type": "origins:modify_resource",
+                "resource": "unique:cf_enhancement",
+                "modifier": {
+                    "operation": "addition",
+                    "value": 4
+                }
+            }, {
+                "type": "origins:modify_resource",
+                "resource": "unique:cf_heat",
+                "modifier": {
+                    "operation": "add_base_early",
+                    "value": -50
+                }
+            }]
+        },
+        "consuming_time_modifier": {
+            "operation": "multiply_base_additive",
+            "value": 1
+        },
+        "food_component": {
+            "hunger": 0,
+            "saturation": 0,
+            "always_edible": true
+        },
+        "item_action": {
+            "type": "origins:consume",
+            "amount": 1
+        },
+        "condition": {
+            "type": "origins:and",
+            "conditions": [{
+                "type": "origins:resource",
+                "resource": "unique:cf_enhancement",
+                "comparison": "==",
+                "compare_to": 4,
+                "inverted": true
+            }, {
+                "type": "origins:resource",
+                "resource":"unique:cf_heat",
+                "comparison": ">=",
+                "compare_to": 50
+            }]
+        }
+    },
+    "if_the_right_one_doesnt_getcha": {
+        "type": "origins:edible_item",
+        "hidden": "true",
+        "item_condition": {
+            "type": "origins:ingredient",
+            "ingredient": {
+                "item": "minecraft:copper_ingot"
+            }
+        },
+        "consume_sound": "minecraft:block.copper.place",
+        "entity_action": {
+            "type": "origins:and",
+            "actions": [{
+                "type": "origins:play_sound",
+                "sound": "minecraft:block.copper.step",
+                "volume": 1
+            }, {
+                "type": "origins:modify_resource",
+                "resource": "unique:cf_enhancement",
+                "modifier": {
+                    "operation": "multiply_total",
+                    "value": -1
+                }
+            }, {
+                "type": "origins:modify_resource",
+                "resource": "unique:cf_enhancement",
+                "modifier": {
+                    "operation": "addition",
+                    "value": 2
+                }
+            }, {
+                "type": "origins:modify_resource",
+                "resource": "unique:cf_heat",
+                "modifier": {
+                    "operation": "add_base_early",
+                    "value": -50
+                }
+            }]
+        },
+        "consuming_time_modifier": {
+            "operation": "multiply_base_additive",
+            "value": 1
+        },
+        "food_component": {
+            "hunger": 0,
+            "saturation": 0,
+            "always_edible": true
+        },
+        "item_action": {
+            "type": "origins:consume",
+            "amount": 1
+        },
+        "condition": {
+            "type": "origins:and",
+            "conditions": [{
+                "type": "origins:resource",
+                "resource": "unique:cf_enhancement",
+                "comparison": "==",
+                "compare_to": 2,
+                "inverted": true
+            }, {
+                "type": "origins:resource",
+                "resource":"unique:cf_heat",
+                "comparison": ">=",
+                "compare_to": 50
+            }]
+        }
+    },
+    "then_the_left_one_will": {
+        "type": "origins:edible_item",
+        "hidden": "true",
+        "item_condition": {
+            "type": "origins:ingredient",
+            "ingredient": {
+                "item": "minecraft:gold_ingot"
+            }
+        },
+        "consume_sound": "minecraft:block.copper.place",
+        "entity_action": {
+            "type": "origins:and",
+            "actions": [{
+                "type": "origins:play_sound",
+                "sound": "minecraft:block.copper.step",
+                "volume": 1
+            }, {
+                "type": "origins:modify_resource",
+                "resource": "unique:cf_enhancement",
+                "modifier": {
+                    "operation": "multiply_total",
+                    "value": -1
+                }
+            }, {
+                "type": "origins:modify_resource",
+                "resource": "unique:cf_enhancement",
+                "modifier": {
+                    "operation": "addition",
+                    "value": 3
+                }
+            }, {
+                "type": "origins:modify_resource",
+                "resource": "unique:cf_heat",
+                "modifier": {
+                    "operation": "add_base_early",
+                    "value": -50
+                }
+            }]
+        },
+        "consuming_time_modifier": {
+            "operation": "multiply_base_additive",
+            "value": 1
+        },
+        "food_component": {
+            "hunger": 0,
+            "saturation": 0,
+            "always_edible": true
+        },
+        "item_action": {
+            "type": "origins:consume",
+            "amount": 1
+        },
+        "condition": {
+            "type": "origins:and",
+            "conditions": [{
+                "type": "origins:resource",
+                "resource": "unique:cf_enhancement",
+                "comparison": "==",
+                "compare_to": 3,
+                "inverted": true
+            }, {
+                "type": "origins:resource",
+                "resource":"unique:cf_heat",
+                "comparison": ">=",
+                "compare_to": 50
+            }]
+        }
+    },
+    "you_move_sixteen_tons": {
+        "type": "origins:edible_item",
+        "hidden": "true",
+        "item_condition": {
+            "type": "origins:ingredient",
+            "ingredient": {
+                "item": "minecraft:emerald"
+            }
+        },
+        "consume_sound": "minecraft:block.copper.place",
+        "entity_action": {
+            "type": "origins:and",
+            "actions": [{
+                "type": "origins:play_sound",
+                "sound": "minecraft:block.copper.step",
+                "volume": 1
+            }, {
+                "type": "origins:modify_resource",
+                "resource": "unique:cf_enhancement",
+                "modifier": {
+                    "operation": "multiply_total",
+                    "value": -1
+                }
+            }, {
+                "type": "origins:modify_resource",
+                "resource": "unique:cf_enhancement",
+                "modifier": {
+                    "operation": "addition",
+                    "value": 5
+                }
+            }, {
+                "type": "origins:modify_resource",
+                "resource": "unique:cf_heat",
+                "modifier": {
+                    "operation": "add_base_early",
+                    "value": -50
+                }
+            }]
+        },
+        "consuming_time_modifier": {
+            "operation": "multiply_base_additive",
+            "value": 1
+        },
+        "food_component": {
+            "hunger": 0,
+            "saturation": 0,
+            "always_edible": true
+        },
+        "item_action": {
+            "type": "origins:consume",
+            "amount": 1
+        },
+        "condition": {
+            "type": "origins:and",
+            "conditions": [{
+                "type": "origins:resource",
+                "resource": "unique:cf_enhancement",
+                "comparison": "==",
+                "compare_to": 5,
+                "inverted": true
+            }, {
+                "type": "origins:resource",
+                "resource":"unique:cf_heat",
+                "comparison": ">=",
+                "compare_to": 50
+            }]
+        }
+    },
+    "whadda_you_get": {
+        "type": "origins:edible_item",
+        "hidden": "true",
+        "item_condition": {
+            "type": "origins:ingredient",
+            "ingredient": {
+                "item": "minecraft:diamond"
+            }
+        },
+        "consume_sound": "minecraft:block.copper.place",
+        "entity_action": {
+            "type": "origins:and",
+            "actions": [{
+                "type": "origins:play_sound",
+                "sound": "minecraft:block.copper.step",
+                "volume": 1
+            }, {
+                "type": "origins:modify_resource",
+                "resource": "unique:cf_enhancement",
+                "modifier": {
+                    "operation": "multiply_total",
+                    "value": -1
+                }
+            }, {
+                "type": "origins:modify_resource",
+                "resource": "unique:cf_enhancement",
+                "modifier": {
+                    "operation": "addition",
+                    "value": 6
+                }
+            }, {
+                "type": "origins:modify_resource",
+                "resource": "unique:cf_heat",
+                "modifier": {
+                    "operation": "add_base_early",
+                    "value": -50
+                }
+            }]
+        },
+        "consuming_time_modifier": {
+            "operation": "multiply_base_additive",
+            "value": 1
+        },
+        "food_component": {
+            "hunger": 0,
+            "saturation": 0,
+            "always_edible": true
+        },
+        "item_action": {
+            "type": "origins:consume",
+            "amount": 1
+        },
+        "condition": {
+            "type": "origins:and",
+            "conditions": [{
+                "type": "origins:resource",
+                "resource": "unique:cf_enhancement",
+                "comparison": "==",
+                "compare_to": 6,
+                "inverted": true
+            }, {
+                "type": "origins:resource",
+                "resource":"unique:cf_heat",
+                "comparison": ">=",
+                "compare_to": 50
+            }]
+        }
+    },
+    "another_day_older_and_deeper_in_debt": {
+        "type": "origins:edible_item",
+        "hidden": "true",
+        "item_condition": {
+            "type": "origins:ingredient",
+            "ingredient": {
+                "item": "minecraft:brick"
+            }
+        },
+        "consume_sound": "minecraft:block.metal.place",
+        "entity_action": {
+            "type": "origins:and",
+            "actions": [{
+                "type": "origins:play_sound",
+                "sound": "minecraft:block.metal.step",
+                "volume": 1
+            }, {
+                "type": "origins:modify_resource",
+                "resource": "unique:cf_enhancement",
+                "modifier": {
+                    "operation": "multiply_total",
+                    "value": -1
+                }
+            }]
+        },
+        "consuming_time_modifier": {
+            "operation": "multiply_base_additive",
+            "value": 1
+        },
+        "food_component": {
+            "hunger": 0,
+            "saturation": 0,
+            "always_edible": true
+        },
+        "item_action": {
+            "type": "origins:consume",
+            "amount": 1
+        },
+        "condition": {
+            "type": "origins:and",
+            "conditions": [{
+                "type": "origins:resource",
+                "resource": "unique:cf_enhancement",
+                "comparison": "==",
+                "compare_to": 0,
+                "inverted": true
+            }]
+        }
+    }
+}

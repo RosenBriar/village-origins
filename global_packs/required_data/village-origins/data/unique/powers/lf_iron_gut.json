@@ -1,0 +1,34 @@
+{
+    "type": "origins:multiple",
+    "name": "Iron Guts",
+    "description": "Having spent so much time in the wild, you now resist the effects of hunger and poison. Rotten flesh is also more nutritious.",
+    "liver": {
+        "type": "origins:effect_immunity",
+        "effects": [
+            "minecraft:hunger",
+            "minecraft:poison"
+        ]
+    },
+    "not_one_wasted_scrap": {
+        "type": "origins:modify_food",
+        "item_condition": {
+            "type": "origins:ingredient",
+            "ingredient": {
+                "item": "minecraft:rotten_flesh"
+            }
+        },
+        "food_modifier": {
+            "operation": "addition",
+            "value": 2.0
+        },
+        "prevent_effects": true
+    },
+    "low_health": {
+        "type": "origins:attribute",
+        "modifier": {
+            "attribute": "minecraft:generic.max_health",
+            "operation": "addition",
+            "value": -2
+        }
+    }
+}

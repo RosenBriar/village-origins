@@ -1,0 +1,19 @@
+{
+    "name": "Lizardfolk",
+    "description": "A scavenger of the swamp, specializing in making do with 'trash'.",
+    "icon": "minecraft:green_dye",
+    "impact": 1,
+    "powers": [
+        "unique:lf_small_stature",
+        "unique:lf_prey",
+        "unique:lf_scavenger_diet",
+        "unique:lf_swim_speed",
+        "unique:lf_hydrodynamics",
+        "unique:lf_breathe",
+        "unique:lf_lucky",
+        "unique:lf_scrap_armor",
+        "unique:lf_iron_gut",
+        "unique:lf_jury_rigging",
+        "unique:lf_scales"
+    ]
+}

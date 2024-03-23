@@ -1,0 +1,18 @@
+{
+    "order": 1,
+    "missing_name": "None",
+    "missing_description": "Identities are personalized and complex, designed for the experience of the user.",
+    "origins": [
+        "general:common",
+        "unique:coreforged",
+        "unique:lizardfolk",
+        "unique:dragonborn",
+        "unique:weaver"
+    ],
+    "default_origin": "general:common",
+    "gui_title": {
+        "choose_origin": "What is your Identity?",
+        "view_origin": "This is your Identity."
+    },
+    "replace": true
+}

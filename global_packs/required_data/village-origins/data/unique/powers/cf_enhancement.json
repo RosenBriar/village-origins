@@ -1,0 +1,11 @@
+{
+    "type": "origins:resource",
+    "name": "Replacable Shell",
+    "description": "Using the valuables you were created to refine, you can imbue your own body with their power to become stronger. Only one buff may be applied at any time.",
+    "min": 0,
+    "max": 6,
+    "start_value": 0,
+    "hud_render": {
+        "should_render": false
+    }
+}

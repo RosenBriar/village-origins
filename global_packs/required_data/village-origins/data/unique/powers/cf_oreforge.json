@@ -1,0 +1,239 @@
+{
+    "type": "origins:multiple",
+    "name": "Ore Forge",
+    "description": "At the cost of heat, smelt raw ores into their smelted versions.",
+    "iron_smeltery": {
+        "type": "origins:active_self",
+        "condition": {
+            "type": "origins:and",
+            "conditions": [{
+                "type": "origins:equipped_item",
+                "equipment_slot": "mainhand",
+                "item_condition": {
+                    "type": "origins:and",
+                    "conditions": [{
+                        "type": "origins:ingredient",
+                        "ingredient": {
+                            "item": "minecraft:raw_iron"
+                        }
+                    }, {
+                        "type": "origins:amount",
+                        "comparison": ">=",
+                        "compare_to": 4
+                    }]
+                }
+            }, {
+                "type": "origins:resource",
+                "resource": "unique:cf_heat",
+                "comparison": ">=",
+                "compare_to": 3
+            }]
+        },
+        "cooldown": 20,
+        "hud_render": {
+            "should_render": true,
+            "sprite_location": "minecraft:textures/guis/coreforge/resource_bar_1.png",
+            "bar_index": 1
+        },
+        "entity_action": {
+            "type": "origins:and",
+            "actions": [{
+                "type": "origins:modify_inventory",
+                "item_condition": {
+                    "type": "origins:ingredient",
+                    "ingredient": {
+                        "item": "minecraft:raw_iron"
+                    }
+                },
+                "item_action": {
+                    "type": "origins:consume",
+                    "amount": 4
+                }
+            }, {
+                "type": "origins:modify_resource",
+                "resource": "unique:cf_heat",
+                "modifier": {
+                    "operation": "addition",
+                    "value": -3
+                }
+            }, {
+                "type": "origins:delay",
+                "ticks": 20,
+                "action": {
+                    "type": "origins:and",
+                    "actions": [{
+                    "type": "origins:give",
+                    "stack": {
+                        "item": "minecraft:iron_ingot",
+                        "amount": 4
+                      }
+                }, {
+                    "type": "origins:play_sound",
+                    "sound": "minecraft:block.fire.extinguish",
+                    "volume": 1,
+                    "pitch": 0.6
+                }]}
+            }]
+        },
+        "key": {
+            "key": "key.use",
+            "continuous": true
+        }
+    },
+    "gold_smeltery": {
+        "type": "origins:active_self",
+        "condition": {
+            "type": "origins:and",
+            "conditions": [{
+                "type": "origins:equipped_item",
+                "equipment_slot": "mainhand",
+                "item_condition": {
+                    "type": "origins:and",
+                    "conditions": [{
+                        "type": "origins:ingredient",
+                        "ingredient": {
+                            "item": "minecraft:raw_gold"
+                        }
+                    }, {
+                        "type": "origins:amount",
+                        "comparison": ">=",
+                        "compare_to": 4
+                    }]
+                }
+            }, {
+                "type": "origins:resource",
+                "resource": "unique:cf_heat",
+                "comparison": ">=",
+                "compare_to": 3
+            }]
+        },
+        "cooldown": 20,
+        "hud_render": {
+            "should_render": true,
+            "sprite_location": "minecraft:textures/guis/coreforge/resource_bar_1.png",
+            "bar_index": 1
+        },
+        "entity_action": {
+            "type": "origins:and",
+            "actions": [{
+                "type": "origins:modify_inventory",
+                "item_condition": {
+                    "type": "origins:ingredient",
+                    "ingredient": {
+                        "item": "minecraft:raw_gold"
+                    }
+                },
+                "item_action": {
+                    "type": "origins:consume",
+                    "amount": 4
+                }
+            }, {
+                "type": "origins:modify_resource",
+                "resource": "unique:cf_heat",
+                "modifier": {
+                    "operation": "addition",
+                    "value": -3
+                }
+            }, {
+                "type": "origins:delay",
+                "ticks": 20,
+                "action": {
+                    "type": "origins:and",
+                    "actions": [{
+                    "type": "origins:give",
+                    "stack": {
+                        "item": "minecraft:gold_ingot",
+                        "amount": 4
+                      }
+                }, {
+                    "type": "origins:play_sound",
+                    "sound": "minecraft:block.fire.extinguish",
+                    "volume": 1,
+                    "pitch": 0.6
+                }]}
+            }]
+        },
+        "key": {
+            "key": "key.use",
+            "continuous": true
+        }
+    },
+    "copper_smeltery": {
+        "type": "origins:active_self",
+        "condition": {
+            "type": "origins:and",
+            "conditions": [{
+                "type": "origins:equipped_item",
+                "equipment_slot": "mainhand",
+                "item_condition": {
+                    "type": "origins:and",
+                    "conditions": [{
+                        "type": "origins:ingredient",
+                        "ingredient": {
+                            "item": "minecraft:raw_copper"
+                        }
+                    }, {
+                        "type": "origins:amount",
+                        "comparison": ">=",
+                        "compare_to": 4
+                    }]
+                }
+            }, {
+                "type": "origins:resource",
+                "resource": "unique:cf_heat",
+                "comparison": ">=",
+                "compare_to": 3
+            }]
+        },
+        "cooldown": 20,
+        "hud_render": {
+            "should_render": true,
+            "sprite_location": "minecraft:textures/guis/coreforge/resource_bar_1.png",
+            "bar_index": 1
+        },
+        "entity_action": {
+            "type": "origins:and",
+            "actions": [{
+                "type": "origins:modify_inventory",
+                "item_condition": {
+                    "type": "origins:ingredient",
+                    "ingredient": {
+                        "item": "minecraft:raw_copper"
+                    }
+                },
+                "item_action": {
+                    "type": "origins:consume",
+                    "amount": 4
+                }
+            }, {
+                "type": "origins:modify_resource",
+                "resource": "unique:cf_heat",
+                "modifier": {
+                    "operation": "addition",
+                    "value": -3
+                }
+            }, {
+                "type": "origins:delay",
+                "ticks": 20,
+                "action": {
+                    "type": "origins:and",
+                    "actions": [{
+                    "type": "origins:give",
+                    "stack": {
+                        "item": "minecraft:copper_ingot",
+                        "amount": 4
+                      }
+                }, {
+                    "type": "origins:play_sound",
+                    "sound": "minecraft:block.fire.extinguish",
+                    "volume": 1,
+                    "pitch": 0.6
+                }]}
+            }]
+        },
+        "key": {
+            "key": "key.use",
+            "continuous": true
+        }
+    }
+}

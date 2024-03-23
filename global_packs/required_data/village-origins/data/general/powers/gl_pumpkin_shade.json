@@ -1,0 +1,24 @@
+{
+    "type": "origins:stacking_status_effect",
+    "min_stacks": 0,
+    "max_stacks": 2,
+    "duration_per_stack": 30,
+    "tick_rate": 20,
+    "effect": {
+        "effect": "minecraft:darkness",
+        "is_ambient": true,
+        "show_particles": false,
+        "show_icon": false
+    },
+    "condition": {
+        "type": "origins:equipped_item",
+        "equipment_slot": "head",
+        "item_condition": {
+            "type": "origins:ingredient",
+            "ingredient": {
+                "item": "minecraft:carved_pumpkin"
+            }
+        }
+    },
+    "hidden": true
+}

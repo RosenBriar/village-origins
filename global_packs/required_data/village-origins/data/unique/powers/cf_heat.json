@@ -1,0 +1,13 @@
+{
+    "type": "origins:resource",
+    "name": "Blazing Core",
+    "description": "The source of your animation comes from the fuel that burns within you. Should it be quenched, you will be nothing more than a pile of rocks.",
+    "min": 0,
+    "max": 60,
+    "start_value": 60,
+    "hud_render": {
+        "should_render": true,
+        "sprite_location": "minecraft:textures/guis/coreforge/resource_bar_1.png",
+        "bar_index": 0
+    }
+}

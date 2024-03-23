@@ -1,0 +1,17 @@
+{
+    "type": "origins:prevent_item_use",
+    "name": "Burnt Food",
+    "description": "You are only capable of eating fuels, and normal food burns up inside of you.",
+    "item_condition": {
+        "type": "origins:and",
+        "conditions": [{
+            "type": "origins:food"
+        }, {
+            "type": "origins:ingredient",
+            "ingredient": {
+                "tag": "general:coals"
+            },
+            "inverted": true
+        }]
+    }
+}

@@ -1,0 +1,21 @@
+{
+    "type": "origins:active_self",
+    "name": "Poison Breath",
+    "description": "Using [PRIMARY], you will spread a poisonous liquid all around you, dealing significant damage to those around you.",
+    "entity_action": {
+        "type": "origins:spawn_effect_cloud",
+        "radius": 5.0,
+        "wait_time": 0,
+        "effect": {
+            "effect": "minecraft:poison",
+            "amplifier": 2,
+            "duration": 100
+        }
+    },
+    "cooldown": 200,
+    "hud_render": {
+        "should_render": true,
+        "sprite_location": "minecraft:textures/guis/coreforge/resource_bar_1.png",
+        "bar_index": 2
+    }
+}

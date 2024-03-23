@@ -1,0 +1,124 @@
+{
+    "type": "origins:multiple",
+    "hidden": true,
+    "iron_plating": {
+        "type": "origins:action_over_time",
+        "interval": 20,
+        "condition": {
+            "type": "origins:resource",
+            "resource": "unique:cf_enhancement",
+            "comparison": "==",
+            "compare_to": 1
+        },
+        "rising_action": {
+            "type": "origins:grant_power",
+            "power": "unique:cf-enhancements_iron",
+            "source": "unique:cf_enhancements"
+        },
+        "falling_action": {
+            "type": "origins:revoke_power",
+            "power": "unique:cf-enhancements_iron",
+            "source": "unique:cf_enhancements"
+        }
+    },
+    "gold_plating": {
+        "type": "origins:action_over_time",
+        "interval": 20,
+        "condition": {
+            "type": "origins:resource",
+            "resource": "unique:cf_enhancement",
+            "comparison": "==",
+            "compare_to": 3
+        },
+        "rising_action": {
+            "type": "origins:grant_power",
+            "power": "unique:cf-enhancements_gold",
+            "source": "unique:cf_enhancements"
+        },
+        "falling_action": {
+            "type": "origins:revoke_power",
+            "power": "unique:cf-enhancements_gold",
+            "source": "unique:cf_enhancements"
+        }
+    },
+    "copper_plating": {
+        "type": "origins:action_over_time",
+        "interval": 20,
+        "condition": {
+            "type": "origins:resource",
+            "resource": "unique:cf_enhancement",
+            "comparison": "==",
+            "compare_to": 2
+        },
+        "rising_action": {
+            "type": "origins:grant_power",
+            "power": "unique:cf-enhancements_copper",
+            "source": "unique:cf_enhancements"
+        },
+        "falling_action": {
+            "type": "origins:revoke_power",
+            "power": "unique:cf-enhancements_copper",
+            "source": "unique:cf_enhancements"
+        }
+    },
+    "netherite_plating": {
+        "type": "origins:action_over_time",
+        "interval": 20,
+        "condition": {
+            "type": "origins:resource",
+            "resource": "unique:cf_enhancement",
+            "comparison": "==",
+            "compare_to": 4
+        },
+        "rising_action": {
+            "type": "origins:grant_power",
+            "power": "unique:cf-enhancements_netherite",
+            "source": "unique:cf_enhancements"
+        },
+        "falling_action": {
+            "type": "origins:revoke_power",
+            "power": "unique:cf-enhancements_netherite",
+            "source": "unique:cf_enhancements"
+        }
+    },
+    "emerald_plating": {
+        "type": "origins:action_over_time",
+        "interval": 20,
+        "condition": {
+            "type": "origins:resource",
+            "resource": "unique:cf_enhancement",
+            "comparison": "==",
+            "compare_to": 5
+        },
+        "rising_action": {
+            "type": "origins:grant_power",
+            "power": "unique:cf-enhancements_emerald",
+            "source": "unique:cf_enhancements"
+        },
+        "falling_action": {
+            "type": "origins:revoke_power",
+            "power": "unique:cf-enhancements_emerald",
+            "source": "unique:cf_enhancements"
+        }
+    },
+    "diamond_plating": {
+        "type": "origins:action_over_time",
+        "interval": 20,
+        "condition": {
+            "type": "origins:resource",
+            "resource": "unique:cf_enhancement",
+            "comparison": "==",
+            "compare_to": 6
+        },
+        "rising_action": {
+            "type": "origins:grant_power",
+            "power": "unique:cf-enhancements_diamond",
+            "source": "unique:cf_enhancements"
+        },
+        "falling_action": {
+            "type": "origins:revoke_power",
+            "power": "unique:cf-enhancements_diamond",
+            "source": "unique:cf_enhancements"
+        }
+    }
+}

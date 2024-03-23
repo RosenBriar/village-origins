@@ -1,0 +1,22 @@
+{
+    "type": "origins:action_when_damage_taken",
+    "name": "Bottom of the Food Chain",
+    "description": "As a harvester and a scavenger, you are the target of predation constantly. When at low health, recieve a temporary speed boost.",
+    "condition": {
+        "type": "origins:relative_health",
+        "comparison": "<=",
+        "compare_to": 0.5
+    },
+    "damage_condition": {
+        "type": "origins:attacker"
+    },
+    "cooldown": 1,
+    "entity_action": {
+        "type": "origins:apply_effect",
+        "effect": {
+            "effect": "minecraft:speed",
+            "duration": 300,
+            "amplifier": 0
+        }
+    }
+}

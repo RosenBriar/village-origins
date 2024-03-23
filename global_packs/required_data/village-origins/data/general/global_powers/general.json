@@ -1,0 +1,8 @@
+{
+    "entity_types": [
+        "minecraft:player"
+    ],
+    "powers": [
+        "general:gl_orb_origin"
+    ]
+}

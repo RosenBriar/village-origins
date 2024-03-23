@@ -1,0 +1,72 @@
+{
+    "type": "origins:multiple",
+    "name": "Heat Sink",
+    "description": "Heat drains from you while submerged in water or in the cold.",
+    "low_energy": {
+        "type": "origins:stacking_status_effect",
+        "min_stacks": 0,
+        "max_stacks": 1,
+        "duration_per_stack": 30,
+        "tick_rate": 20,
+        "effects": [{
+            "effect": "minecraft:slowness",
+            "is_ambient": true,
+            "show_particles": false,
+            "show_icon": false,
+            "amplifier": 4
+        }, {
+            "effect": "minecraft:weakness",
+            "is_ambient": true,
+            "show_particles": true,
+            "show_icon": true
+        }],
+        "condition": {
+            "type": "origins:and",
+            "conditions": [{
+                "type": "origins:resource",
+                "resource": "unique:cf_heat",
+                "comparison": "==",
+                "compare_to": 0
+            }, {
+                "type": "origins:submerged_in",
+                "fluid": "minecraft:water",
+                "inverted": true
+            }]
+        }
+    },
+    "blazing_resurrection": {
+        "type": "origins:action_on_callback",
+        "entity_action_respawned": {
+            "type": "origins:modify_resource",
+            "resource": "unique:cf_heat",
+            "modifier": {
+                "operation": "addition",
+                "value": 60
+            }
+        }
+    },
+    "shell_sink": {
+        "type": "origins:action_over_time",
+        "interval": 80,
+        "entity_action": {
+            "type": "origins:modify_resource",
+            "resource": "unique:cf_heat",
+            "modifier": {
+                "operation": "addition",
+                "value": -3
+            }
+        },
+        "condition": {
+            "type": "origins:and",
+            "conditions": [{
+                "type": "origins:moving"
+            }, {
+                "type": "origins:resource",
+                "resource": "unique:cf_enhancement",
+                "comparison": "==",
+                "compare_to": 0,
+                "inverted": true
+            }]
+        }
+    }
+}

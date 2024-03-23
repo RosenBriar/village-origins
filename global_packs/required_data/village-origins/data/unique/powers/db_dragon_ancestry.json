@@ -1,0 +1,34 @@
+{
+    "type": "origins:multiple",
+    "name": "Ancestry of Dragons",
+    "description": "Though you share the form of a human, your bones remember a time where you would soar over humanity like a divine creature.",
+    "tall_frame": {
+        "type": "origins:action_on_callback",
+        "entity_action_gained": {
+            "type": "origins:and",
+            "actions": [{
+                "type": "origins:execute_command",
+                "command": "scale set pehkui:width 1.15 @s"
+            }, {
+                "type": "origins:execute_command",
+                "command": "scale set pehkui:height 1.15 @s"
+            }]
+        },
+        "entity_action_lost": {
+            "type": "origins:and",
+            "actions": [{
+                "type": "origins:execute_command",
+                "command": "scale set pehkui:width 1 @s"
+            }, {
+                "type": "origins:execute_command",
+                "command": "scale set pehkui:height 1 @s"
+            }]
+        }
+    },
+    "chromatic_ancestry": {
+        "type": "origins:effect_immunity",
+        "effects": [
+            "minecraft:poison"
+        ]
+    }
+}

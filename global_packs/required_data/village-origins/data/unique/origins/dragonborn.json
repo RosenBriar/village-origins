@@ -1,0 +1,12 @@
+{
+    "name": "Dragonborn",
+    "description": "Kin of the dragons themselves.",
+    "icon": "minecraft:obsidian",
+    "impact": 1,
+    "powers": [
+        "unique:db_dragon_ancestry",
+        "unique:db_poison_breath",
+        "unique:db_darksight",
+        "unique:db_vengeful_assault"
+    ]
+}

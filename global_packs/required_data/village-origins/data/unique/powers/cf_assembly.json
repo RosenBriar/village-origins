@@ -1,0 +1,59 @@
+{
+    "type": "origins:multiple",
+    "name": "Assembly Required",
+    "description": "Natural Regeneration is disabled. To heal, press [CROUCH] and stand still to repair yourself.",
+    "unnatural": {
+        "type": "origins:disable_regen"
+    },
+    "artifical_heart": {
+        "type": "origins:effect_immunity",
+        "effects": [
+            "minecraft:regeneration",
+            "minecraft:absorption"
+        ]
+    },
+    "repairation": {
+        "type": "origins:action_over_time",
+        "entity_action": {
+            "type": "origins:and",
+            "actions": [{
+                "type": "origins:heal",
+                "amount": 1
+            }, {
+                "type": "origins:modify_resource",
+                "resource": "unique:cf_heat",
+                "modifier": {
+                    "operation": "add_base_early",
+                    "value": -4
+                }
+            }]
+        },
+        "condition": {
+            "type": "origins:and",
+            "conditions": [{
+                "type": "origins:sneaking"
+            }, {
+                "type": "origins:moving",
+                "inverted": true
+            }, {
+                "type": "origins:relative_health",
+                "comparison": "<",
+                "compare_to": 1
+            }, {
+                "type": "origins:resource",
+                "resource": "unique:cf_heat",
+                "comparison": ">=",
+                "compare_to": 4
+            }]
+        },
+        "interval": 60
+    },
+    "iron_bones": {
+        "type": "origins:attribute",
+        "modifier": {
+            "attribute": "minecraft:generic.max_health",
+            "operation": "addition",
+            "value": 4
+        }
+    }
+}

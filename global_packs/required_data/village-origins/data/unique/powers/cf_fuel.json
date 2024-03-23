@@ -1,0 +1,87 @@
+{
+    "type": "origins:multiple",
+    "hidden": true,
+    "coal_eater": {
+        "type": "origins:edible_item",
+        "hidden": "true",
+        "item_condition": {
+            "type": "origins:ingredient",
+            "ingredient": {
+                "tag": "general:coals"
+            }
+        },
+        "consume_sound": "minecraft:block.stone.step",
+        "entity_action": {
+            "type": "origins:play_sound",
+            "sound": "minecraft:block.fire.extinguish",
+            "volume": 0.75
+        },
+        "food_component": {
+            "hunger": 2,
+            "saturation": 0
+        },
+        "condition": {
+            "type": "origins:submerged_in",
+            "fluid": "minecraft:water",
+            "inverted": true
+        }
+    },
+    "coal_block_eater": {
+        "type": "origins:edible_item",
+        "hidden": "true",
+        "item_condition": {
+            "type": "origins:ingredient",
+            "ingredient": {
+                "item": "minecraft:coal_block"
+            }
+        },
+        "consume_sound": "minecraft:block.stone.fall",
+        "entity_action": {
+            "type": "origins:play_sound",
+            "sound": "minecraft:block.fire.extinguish",
+            "volume": 0.75
+        },
+        "food_component": {
+            "hunger": 18,
+            "saturation": 0
+        },
+        "priority": 1,
+        "condition": {
+            "type": "origins:submerged_in",
+            "fluid": "minecraft:water",
+            "inverted": true
+        }
+    },
+    "lava_drinker": {
+        "type": "origins:edible_item",
+        "hidden": "true",
+        "item_condition": {
+            "type": "origins:ingredient",
+            "ingredient": {
+                "item": "minecraft:lava_bucket"
+            }
+        },
+        "consume_sound": "minecraft:block.lava.pop",
+        "entity_action": {
+            "type": "origins:play_sound",
+            "sound": "minecraft:block.fire.extinguish",
+            "volume": 0.75
+        },
+        "consume_action": "drink",
+        "food_component": {
+            "hunger": 20,
+            "saturation": 0.5,
+            "always_edible": true
+        },
+        "return_stack": {
+            "item": "minecraft:bucket",
+            "amount": 1
+        },
+        "priority": 1,
+        "condition": {
+            "type": "origins:submerged_in",
+            "fluid": "minecraft:water",
+            "inverted": true
+        }
+    }
+}

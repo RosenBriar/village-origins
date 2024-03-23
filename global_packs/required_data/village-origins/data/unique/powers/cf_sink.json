@@ -1,0 +1,43 @@
+{
+    "name": "Sink, Not Swim",
+    "description": "You are helpless in water, often being forced to find an alternative way out of a lake.",
+    "type": "origins:multiple",
+    "sink": {
+        "type": "origins:ignore_water"
+    },
+    "not_swim": {
+        "type": "origins:prevent_sprinting",
+        "condition": {
+            "type": "origins:submerged_in",
+            "fluid": "minecraft:water"
+        }
+    },
+    "seafloor_waltz": {
+        "type": "origins:action_over_time",
+        "rising_action": {
+            "type": "origins:and",
+            "actions": [{
+                "type": "origins:execute_command",
+                "command": "scale set pehkui:step_height 4 @s"
+            }, {
+                "type": "origins:execute_command",
+                "command": "scale set pehkui:motion 0.5 @s"
+            }]
+        },
+        "falling_action": {
+            "type": "origins:and",
+            "actions": [{
+                "type": "origins:execute_command",
+                "command": "scale set pehkui:step_height 1 @s"
+            }, {
+                "type": "origins:execute_command",
+                "command": "scale set pehkui:motion 1 @s"
+            }]
+        },
+        "interval": 20,
+        "condition": {
+            "type": "origins:submerged_in",
+            "fluid": "minecraft:water"
+        }
+    }
+}

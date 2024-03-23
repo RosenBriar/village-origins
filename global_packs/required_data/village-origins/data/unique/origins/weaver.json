@@ -1,0 +1,9 @@
+{
+    "name": "Weaver",
+    "description": "She who has lived a thousand years, weaving the threads of fate together.",
+    "icon": "minecraft:string",
+    "impact": 3,
+    "powers": [
+        "unique:wv_to_see"
+    ]
+}

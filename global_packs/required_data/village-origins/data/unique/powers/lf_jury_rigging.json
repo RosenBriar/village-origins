@@ -1,0 +1,22 @@
+{
+    "type": "origins:action_on_block_break",
+    "name": "Jury Rigging",
+    "description": "Tools you use have a base 50% chance to not lose durability, on top of unbreaking.",
+    "entity_action": {
+        "type": "origins:modify_inventory",
+        "slot": "weapon.mainhand",
+        "item_condition": {
+            "type": "origins:is_damageable"
+        },
+        "item_action": {
+            "type": "origins:chance",
+            "action": {
+                "type": "origins:damage",
+                "amount": -1,
+                "ignore_unbreaking": false
+            },
+            "chance": 0.5
+        }
+    },
+    "only_when_harvested": false
+}

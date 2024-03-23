@@ -1,0 +1,54 @@
+{
+    "type": "origins:multiple",
+    "hidden": true,
+    "iron": {
+        "type": "origins:attribute",
+        "modifier": {
+            "attribute": "minecraft:generic.armor",
+            "operation": "addition",
+            "value": 6
+        }
+    },
+    "gold": {
+        "type": "origins:modify_break_speed",
+        "modifier": {
+            "operation": "multiply_total",
+            "value": 0.15
+        }
+    },
+    "copper": {
+        "type": "origins:attribute",
+        "modifier": {
+            "attribute": "minecraft:generic.movement_speed",
+            "operation": "multiply_base",
+            "value": 0.125
+        }
+    },
+    "netherite": {
+        "type": "origins:attribute",
+        "modifier": {
+            "attribute": "minecraft:generic.attack_damage",
+            "operation": "addition",
+            "value": 1
+        }
+    },
+    "emerald": {
+        "type": "origins:action_on_callback",
+        "entity_action_gained": {
+            "type": "origins:execute_command",
+            "command": "scale set pehkui:block_reach 1.5 @s"
+        },
+        "entity_action_lost": {
+            "type": "origins:execute_command",
+            "command": "scale set pehkui:block_reach 1 @s"
+        }
+    },
+    "diamond": {
+        "type": "origins:attribute",
+        "modifier": {
+            "attribute": "minecraft:generic.max_health",
+            "operation": "addition",
+            "value": 8
+        }
+    }
+}

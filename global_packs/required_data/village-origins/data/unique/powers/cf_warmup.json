@@ -1,0 +1,32 @@
+{
+    "type": "origins:action_over_time",
+    "name": "Heat Build-Up",
+    "description": "Hunger is turned into Heat at a fixed rate while above 6 Hunger.",
+    "entity_action": {
+        "type": "origins:and",
+        "actions": [{
+            "type": "origins:exhaust",
+            "amount": 8
+        }, {
+            "type": "origins:modify_resource",
+            "resource": "unique:cf_heat",
+            "modifier": {
+                "operation": "add_base_early",
+                "value": "6"
+            }
+        }]
+    },
+    "condition": {
+        "type": "origins:and",
+        "conditions": [{
+            "type": "origins:resource",
+            "resource": "unique:cf_heat",
+            "comparison": "<",
+            "compare_to": 55
+        }, {
+            "type": "origins:food_level",
+            "comparison": ">",
+            "compare_to": 6
+        }]
+    }
+}

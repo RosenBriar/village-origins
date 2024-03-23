@@ -1,0 +1,17 @@
+{
+    "type": "origins:action_when_hit",
+    "bientity_action": {
+        "type": "origins:chance",
+        "chance": 0.25,
+        "action": {
+            "type": "origins:invert",
+            "action": {
+                "type": "origins:damage",
+                "amount": 4,
+                "damage_type": "minecraft:player_attack"
+            }
+        }
+    },
+    "name": "Vengeful Assault",
+    "description": "When attacked, you have a chance to attack back automatically."
+}
