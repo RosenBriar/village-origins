@@ -48,6 +48,40 @@ craftingTable.addShaped("tuffstairs", <item:blockexpansion:cut_lapis_stairs> * 4
 	[tuff, air, air],
 	[tuff, tuff, air],
 	[tuff, tuff, tuff]]);
+craftingTable.remove(<item:minecraft:note_block>);
+craftingTable.addShaped("rnote", <item:minecraft:note_block>, [
+	[wood, wood, wood],
+	[wood, <item:minecraft:amethyst_shard>, wood],
+	[wood, wood, wood]]);
+craftingTable.remove(<item:minecraft:red_nether_bricks>);
+craftingTable.addShaped("redstone_bricks", <item:minecraft:red_nether_bricks> * 2, [
+	[<item:minecraft:nether_wart>, nether_brick],
+	[nether_brick, <item:minecraft:nether_wart>]]);
+
+craftingTable.remove(<item:minecraft:lodestone>);
+craftingTable.addShaped("soul_lodestone", <item:minecraft:lodestone>, [
+	[chiseled_stone, chiseled_stone, chiseled_stone],
+	[chiseled_stone, <item:minecraft:amethyst_shard>, chiseled_stone],
+	[chiseled_stone, chiseled_stone, chiseled_stone]]);
+craftingTable.remove(<item:minecraft:bricks>);
+craftingTable.addShaped("cheapbrick", <item:minecraft:bricks> * 4, [
+	[brick, brick],
+	[brick, brick]]);
+	
+craftingTable.remove(<item:minecraft:nether_bricks>);
+craftingTable.addShaped("cheapnetherbrick", <item:minecraft:nether_bricks> * 4, [
+	[nether_brick, nether_brick],
+	[nether_brick, nether_brick]]);
+	
+craftingTable.addShapeless("glowdust", <item:minecraft:glowstone_dust> * 2, [<item:minecraft:glow_berries>]);
+craftingTable.addShapeless("alchvap", <item:minecraft:dragon_breath> * 2, [<item:minecraft:glass_bottle>, <item:minecraft:dragon_breath>, blaze_powder]);
+craftingTable.addShapeless("gildingblackstone", <item:minecraft:gilded_blackstone>, [<item:minecraft:gold_nugget>, <item:minecraft:blackstone>]);
+craftingTable.addShapeless("warped_propagation", <item:minecraft:warped_nylium>, [netherrack, <item:minecraft:warped_fungus>]);
+craftingTable.addShapeless("crimson_propagation", <item:minecraft:crimson_nylium>, [netherrack, <item:minecraft:crimson_fungus>]);
+
+villagerTrades.removeTradesSelling(<profession:minecraft:librarian>, 1, <item:minecraft:enchanted_book>);
+villagerTrades.removeTradesSelling(<profession:minecraft:librarian>, 3, <item:minecraft:enchanted_book>);
+ 
 //Disabling Items
 <tagmanager:items>.addId(disabled_items,
 <resource:blockexpansion:obsidian_brick_slab>,<resource:blockexpansion:obsidian_brick_stairs>,<resource:blockexpansion:obsidian_brick_pillar>,<resource:blockexpansion:obsidian_brick_wall>,<resource:blockexpansion:cracked_obsidian_bricks>,
