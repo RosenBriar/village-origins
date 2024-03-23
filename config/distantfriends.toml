@@ -1,6 +1,0 @@
-[general]
-friends = ["darkosto"]
-addWhitelistPlayers = true
-[compat]
-playerMobsCompat = false
-playerMobsWhitelist = []
