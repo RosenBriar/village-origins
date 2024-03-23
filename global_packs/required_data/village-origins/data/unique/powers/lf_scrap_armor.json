@@ -1,7 +1,7 @@
 {
     "type": "origins:restrict_armor",
     "name": "Scrap Armor",
-    "description": "You are unable to wear gold, iron, or netherite armor, for some reason.",
+    "description": "You are unable to wear gold, iron, or netherite armor, due to inexperience with forged armors.",
     "head": {
         "type": "origins:ingredient",
         "ingredient": [{
