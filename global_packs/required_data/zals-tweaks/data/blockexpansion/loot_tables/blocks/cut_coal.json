@@ -10,7 +10,7 @@
           "children": [
             {
               "type": "minecraft:item",
-              "name": "etcetera:iridescent_concrete",
+              "name": "blockexpansion:cut_coal",
               "conditions": [
                 {
                   "condition": "minecraft:match_tool",
