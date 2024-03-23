@@ -1,10 +1,10 @@
 {
 	"effectSpawningRules": {
 		"mobs": "SIMULATION_AND_PLANES",
-		"other_players": "SIMULATION_AND_PLANES",
 		"items": "SIMULATION_AND_PLANES",
+		"other_players": "SIMULATION_AND_PLANES",
 		"boat": "SIMULATION_AND_PLANES",
-		"player": "SIMULATION_AND_PLANES"
+		"player": "ONLY_SIMULATION"
 	},
 	"wakesInRunningWater": false,
 	"wavePropagationFactor": 0.949999988079071,

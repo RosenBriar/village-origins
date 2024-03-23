@@ -41,7 +41,7 @@ autoCaveMode:-1
 legibleCaveMaps:false
 displayCaveModeStart:true
 caveModeToggleTimer:1000
-defaultCaveModeType:1
+defaultCaveModeType:0
 biomeBlending:true
 trackedPlayers:true
 multipleImagesExport:false

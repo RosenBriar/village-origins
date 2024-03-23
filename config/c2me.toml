@@ -27,7 +27,7 @@ globalExecutorParallelism = "default"
 	[clientSideConfig.modifyMaxVDConfig]
 		# (Default: true) Whether to modify maximum view distance
 		enabled = false
-		# (Default: 54) Max render distance allowed in game options
+		# (Default: 43) Max render distance allowed in game options
 		maxViewDistance = "default"
 
 [noTickViewDistance]
@@ -108,6 +108,9 @@ globalExecutorParallelism = "default"
 	enforceSafeWorldRandomAccess = "default"
 
 [generalOptimizations]
+	# (Default: true) Whether to let async chunk request no longer block server thread
+	# (may cause incompatibility with other mods)
+	optimizeAsyncChunkRequest = "default"
 	# (Default: 100000) The task interval of mid-tick chunk tasks in nanoseconds (-1 to disable)  
 	# Mid-tick chunk tasks is to execute chunk tasks during server tick loop  
 	# to speed up chunk loading and generation  
@@ -120,9 +123,6 @@ globalExecutorParallelism = "default"
 	# Incompatible with Dimensional Threading (dimthread)
 	# 
 	midTickChunkTasksInterval = "default"
-	# (Default: true) Whether to let async chunk request no longer block server thread
-	# (may cause incompatibility with other mods)
-	optimizeAsyncChunkRequest = "default"
 
 	[generalOptimizations.autoSave]
 		# (Default: ENHANCED) Defines how auto save should be handled  

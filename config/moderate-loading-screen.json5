@@ -9,8 +9,8 @@
 		"fabric-*",
 		"fabric"
 	],
-	"iconSize": 48,
-	"screenType": "SNOWFLAKES",
+	"iconSize": 42,
+	"screenType": "STACKING",
 	"stackingConfig": {
 		"cycleSeconds": 20
 	}

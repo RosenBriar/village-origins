@@ -29,6 +29,31 @@
       "origins:damage_from_snowballs": true,
       "origins:damage_from_potions": true
     },
+    "general:common": {
+      "enabled": true
+    },
+    "unique:coreforged": {
+      "enabled": true,
+      "unique:cf_heat": true,
+      "unique:cf_warmup": true,
+      "unique:cf_burntfood": true,
+      "unique:cf_fuel": true,
+      "unique:cf_sink": true,
+      "unique:cf_cooldown": true,
+      "unique:cf_heatsink": true,
+      "unique:cf_assembly": true,
+      "unique:cf_enhancement": true,
+      "unique:cf_enhancement_logic": true,
+      "unique:cf_enhance": true,
+      "unique:cf_oreforge": true
+    },
+    "unique:dragonborn": {
+      "enabled": true,
+      "unique:db_dragon_ancestry": true,
+      "unique:db_poison_breath": true,
+      "unique:db_darksight": true,
+      "unique:db_vengeful_assault": true
+    },
     "origins:elytrian": {
       "enabled": true,
       "origins:elytra": true,
@@ -60,6 +85,20 @@
     "origins:human": {
       "enabled": true
     },
+    "unique:lizardfolk": {
+      "enabled": true,
+      "unique:lf_small_stature": true,
+      "unique:lf_prey": true,
+      "unique:lf_scavenger_diet": true,
+      "unique:lf_swim_speed": true,
+      "unique:lf_hydrodynamics": true,
+      "unique:lf_breathe": true,
+      "unique:lf_lucky": true,
+      "unique:lf_scrap_armor": true,
+      "unique:lf_iron_gut": true,
+      "unique:lf_jury_rigging": true,
+      "unique:lf_scales": true
+    },
     "origins:merling": {
       "enabled": true,
       "origins:water_breathing": true,
@@ -90,45 +129,6 @@
       "origins:strong_arms_break_speed": true,
       "origins:no_shield": true,
       "origins:more_exhaustion": true
-    },
-    "general:common": {
-      "enabled": true
-    },
-    "unique:coreforged": {
-      "enabled": true,
-      "unique:cf_heat": true,
-      "unique:cf_warmup": true,
-      "unique:cf_burntfood": true,
-      "unique:cf_fuel": true,
-      "unique:cf_sink": true,
-      "unique:cf_cooldown": true,
-      "unique:cf_heatsink": true,
-      "unique:cf_assembly": true,
-      "unique:cf_enhancement": true,
-      "unique:cf_enhancement_logic": true,
-      "unique:cf_enhance": true,
-      "unique:cf_oreforge": true
-    },
-    "unique:lizardfolk": {
-      "enabled": true,
-      "unique:lf_small_stature": true,
-      "unique:lf_scavenger_diet": true,
-      "unique:lf_swim_speed": true,
-      "unique:lf_prey": true,
-      "unique:lf_hydrodynamics": true,
-      "unique:lf_breathe": true,
-      "unique:lf_lucky": true,
-      "unique:lf_iron_gut": true,
-      "unique:lf_jury_rigging": true,
-      "unique:lf_scrap_armor": true,
-      "unique:lf_scales": true
-    },
-    "unique:dragonborn": {
-      "enabled": true,
-      "unique:db_dragon_ancestry": true,
-      "unique:db_darksight": true,
-      "unique:db_poison_breath": true,
-      "unique:db_vengeful_assault": true
     },
     "unique:weaver": {
       "enabled": true,
