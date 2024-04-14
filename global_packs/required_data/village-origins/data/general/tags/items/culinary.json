@@ -15,10 +15,15 @@
         "minecraft:cooked_salmon",
         "minecraft:bread",
         "minecraft:cookie",
-        "minecraft:cake",
         "minecraft:pumpkin_pie",
         "minecraft:rabbit_stew",
         "minecraft:mushroom_stew",
-        "minecraft:beetroot_stew"
+        "minecraft:beetroot_soup",
+        
+        "additionaladditions:fried_egg",
+        "additionaladditions:berry_pie",
+        "additionaladditions:chicken_nugget",
+        "culinaryconstruct:sandwich",
+        "legacies_and_legends:bottomless_beetroot_soup"
     ]
 }

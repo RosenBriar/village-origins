@@ -3,12 +3,9 @@
     "name": "Scavenger's Gut",
     "description": "Your diet is composed of berries, roots, and unorthodox meats.",
     "item_condition": {
-        "type": "origins:and",
-        "conditions": [{
-            "type": "origins:ingredient",
-            "ingredient": {
-                "tag": "general:non-scavenger"
-            }
-        }]
+        "type": "origins:ingredient",
+        "ingredient": {
+            "tag": "general:culinary"
+        }
     }
 }
