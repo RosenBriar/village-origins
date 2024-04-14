@@ -6,8 +6,7 @@
         "general:common",
         "unique:coreforged",
         "unique:lizardfolk",
-        "unique:dragonborn",
-        "unique:weaver"
+        "unique:dragonborn"
     ],
     "default_origin": "general:common",
     "gui_title": {
