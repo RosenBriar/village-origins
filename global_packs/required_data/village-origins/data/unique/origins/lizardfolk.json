@@ -1,6 +1,6 @@
 {
     "name": "Lizardfolk",
-    "description": "A scavenger of the swamp, specializing in making do with 'trash'.",
+    "description": "'I'm not *dirty*, I'm resourceful!'",
     "icon": "minecraft:green_dye",
     "impact": 1,
     "powers": [

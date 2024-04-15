@@ -1,6 +1,6 @@
 {
     "name": "Coreforged",
-    "description": "An animated smeltery, left unchecked by a blacksmith. Should the fire inside it go out, it will become dormant once more.",
+    "description": "Runs off of 100% non-renewable resources!",
     "icon": "minecraft:netherite_scrap",
     "impact": 3,
     "powers": [

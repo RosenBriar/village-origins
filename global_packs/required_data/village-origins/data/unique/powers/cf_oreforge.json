@@ -32,7 +32,7 @@
         "cooldown": 20,
         "hud_render": {
             "should_render": true,
-            "sprite_location": "minecraft:textures/guis/coreforge/resource_bar_1.png",
+            "sprite_location": "minecraft:textures/guis/unique/resource_bar_1.png",
             "bar_index": 1
         },
         "entity_action": {
@@ -110,7 +110,7 @@
         "cooldown": 20,
         "hud_render": {
             "should_render": true,
-            "sprite_location": "minecraft:textures/guis/coreforge/resource_bar_1.png",
+            "sprite_location": "minecraft:textures/guis/unique/resource_bar_1.png",
             "bar_index": 1
         },
         "entity_action": {
@@ -188,7 +188,7 @@
         "cooldown": 20,
         "hud_render": {
             "should_render": true,
-            "sprite_location": "minecraft:textures/guis/coreforge/resource_bar_1.png",
+            "sprite_location": "minecraft:textures/guis/unique/resource_bar_1.png",
             "bar_index": 1
         },
         "entity_action": {

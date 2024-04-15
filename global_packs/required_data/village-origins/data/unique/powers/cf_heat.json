@@ -7,7 +7,7 @@
     "start_value": 60,
     "hud_render": {
         "should_render": true,
-        "sprite_location": "minecraft:textures/guis/coreforge/resource_bar_1.png",
+        "sprite_location": "minecraft:textures/guis/unique/resource_bar_1.png",
         "bar_index": 0
     }
 }
