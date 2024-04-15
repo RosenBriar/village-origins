@@ -13,5 +13,5 @@
         "choose_origin": "What is your Identity?",
         "view_origin": "This is your Identity."
     },
-    "replace": true
+    "replace": false
 }
