@@ -1,0 +1,12 @@
+{
+    "name": "Monk",
+    "description": "Sat on a rock so long they gained enlightenment.",
+    "icon": "minecraft:cyan_concrete_powder",
+    "impact": 1,
+    "powers": [
+        "human:all_humanpack",
+        "human:mk_chop",
+        "human:mk_athletics",
+        "human:mk_crouch_jump"
+    ]
+}

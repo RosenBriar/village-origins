@@ -1,0 +1,37 @@
+{
+    "name": "Bastion",
+    "description": "While having a piece of armor equipped in every slot (helmet not required), gain six base defense.",
+    "type": "origins:conditioned_attribute",
+    "modifier": {
+        "attribute": "minecraft:generic.armor",
+        "operation": "addition",
+        "value": 6
+    },
+    "tick_rate": 20,
+    "condition": {
+        "type": "origins:and",
+        "conditions": [{
+            "type": "origins:equipped_item",
+            "equipment_slot": "chest",
+            "item_condition": {
+                "type": "origins:armor_value",
+                "comparison": ">",
+                "compare_to": 0
+            }
+        }, {
+            "type": "origins:equipped_item",
+            "equipment_slot": "legs",
+            "item_condition": {
+                "type": "origins:empty",
+                "inverted": true
+            }
+        }, {
+            "type": "origins:equipped_item",
+            "equipment_slot": "feet",
+            "item_condition": {
+                "type": "origins:empty",
+                "inverted": true
+            }
+        }]
+    }
+}

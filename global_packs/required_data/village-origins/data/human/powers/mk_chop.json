@@ -1,0 +1,34 @@
+{
+    "name": "Wood Chop",
+    "description": "Punching wood is much faster and your fists deal double damage.",
+    "type": "origins:multiple",
+    "cut": {
+        "type": "origins:modify_break_speed",
+        "block_condition": {
+            "type": "origins:in_tag",
+            "tag": "general:logs"
+        },
+        "modifier": {
+            "operation": "multiply_base",
+            "value": 1
+        }
+    },
+    "punch": {
+        "type": "origins:modify_damage_dealt",
+        "damage_condition": {
+            "type": "origins:type",
+            "damage_type": "player_attack"
+        },
+        "condition": {
+            "type": "origins:equipped_item",
+            "equipment_slot": "mainhand",
+            "item_condition": {
+                "type": "origins:empty"
+            }
+        },
+        "modifier": {
+            "operation": "multiply_base",
+            "value": 1
+        }
+    }
+}

@@ -1,0 +1,46 @@
+{
+    "name": "Giant's Feast",
+    "description": "You burn a lot of calories. Recieve a buff to meaty foods and a debuff to plant-based meals.",
+    "type": "origins:multiple",
+    "meat": {
+        "type": "origins:modify_food",
+        "item_condition": {
+            "type": "origins:ingredient",
+            "ingredient": {
+                "tag": "general:carnivore"
+            }
+        },
+        "food_modifier": {
+            "operation": "multiply_base",
+            "value": 0.25
+        },
+        "saturation_modifier": {
+            "operation": "multiply_base",
+            "value": 0.25
+        }
+    },
+    "vegan": {
+        "type": "origins:modify_food",
+        "item_condition": {
+            "type": "origins:ingredient",
+            "ingredient": {
+                "tag": "general:herbivore"
+            }
+        },
+        "food_modifier": {
+            "operation": "multiply_base",
+            "value": -0.25
+        },
+        "saturation_modifier": {
+            "operation": "multiply_base",
+            "value": -0.25
+        }
+    },
+    "badges": [{
+        "sprite": "minecraft:textures/item/cooked_beef.png",
+        "text": "+25% Additional Hunger & Saturation"
+    }, {
+        "sprite": "minecraft:textures/item/sweet_berries.png",
+        "text": "-25% Reduced Hunger & Saturation"
+    }]
+}

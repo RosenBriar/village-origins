@@ -1,0 +1,9 @@
+{
+    "name": "Humanity Pack",
+    "description": "This origin/identity is part of the Humanity Pack, which focuses on mild changes from vanilla, compared to more complex abilities.",
+    "type": "origins:simple",
+    "badges": [{
+        "sprite": "minecraft:textures/item/quartz.png",
+        "text": "Semi-Vanilla"
+    }]
+}

@@ -1,0 +1,14 @@
+{
+    "name": "Giant",
+    "description": "Big boned- that is, taken literally.",
+    "icon": "minecraft:skeleton_skull",
+    "impact": 2,
+    "powers": [
+        "human:all_humanpack",
+        "human:gt_size",
+        "human:gt_xxxl",
+        "human:gt_bulk",
+        "human:gt_healthy",
+        "human:gt_diet"
+    ]
+}

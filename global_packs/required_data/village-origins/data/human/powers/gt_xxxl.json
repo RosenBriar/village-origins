@@ -1,21 +1,11 @@
 {
     "type": "origins:restrict_armor",
-    "name": "Scrap Armor",
-    "description": "You are unable to wear gold, iron, or netherite armor, due to inexperience with forged armors.",
-    "head": {
-        "type": "origins:ingredient",
-        "ingredient": [{
-            "item": "minecraft:golden_helmet"
-        }, {
-            "item": "minecraft:iron_helmet"
-        }, {
-            "item": "minecraft:netherite_helmet"
-        }]
-    },
+    "name": "Broad Build",
+    "description": "Hard, plated armor doesn't fit on you. A shame it is, it'd look really good too. At least you can still wear every helmet.",
     "chest": {
         "type": "origins:ingredient",
         "ingredient": [{
-            "item": "minecraft:golden_chestplate"
+            "item": "minecraft:diamond_chestplate"
         }, {
             "item": "minecraft:iron_chestplate"
         }, {
@@ -25,7 +15,7 @@
     "legs": {
         "type": "origins:ingredient",
         "ingredient": [{
-            "item": "minecraft:golden_leggings"
+            "item": "minecraft:diamond_leggings"
         }, {
             "item": "minecraft:iron_leggings"
         }, {
@@ -35,7 +25,7 @@
     "feet": {
         "type": "origins:ingredient",
         "ingredient": [{
-            "item": "minecraft:golden_boots"
+            "item": "minecraft:diamond_boots"
         }, {
             "item": "minecraft:iron_boots"
         }, {
@@ -43,16 +33,13 @@
         }]
     },
     "badges": [{
-        "sprite": "minecraft:textures/item/iron_helmet.png",
-        "text": "Restricted Armors: Iron, Gold, Netherite"
-    }, {
         "sprite": "minecraft:textures/item/iron_chestplate.png",
-        "text": "Restricted Armors: Iron, Gold, Netherite"
+        "text": "Restricted Armors: Iron, Diamond, Netherite"
     }, {
         "sprite": "minecraft:textures/item/iron_leggings.png",
-        "text": "Restricted Armors: Iron, Gold, Netherite"
+        "text": "Restricted Armors: Iron, Diamond, Netherite"
     }, {
         "sprite": "minecraft:textures/item/iron_boots.png",
-        "text": "Restricted Armors: Iron, Gold, Netherite"
+        "text": "Restricted Armors: Iron, Diamond, Netherite"
     }]
 }
