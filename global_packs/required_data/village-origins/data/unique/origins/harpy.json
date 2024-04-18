@@ -1,0 +1,14 @@
+{
+    "name": "Harpy",
+    "description": "As mermaids were for sailors, harpies are for pilots.",
+    "icon": "minecraft:feather",
+    "impact": 2,
+    "powers": [
+        "unique:hp_wingspan",
+        "unique:hp_claustrophobia",
+        "unique:hp_gale",
+        "unique:hp_omnivore",
+        "unique:hp_lightarmor",
+        "unique:hp_fragile"
+    ]
+}

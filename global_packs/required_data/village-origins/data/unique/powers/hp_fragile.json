@@ -1,0 +1,38 @@
+{
+    "name": "Fragile Bones",
+    "description": "Hollow bones make for an easy target.",
+    "type": "origins:multiple",
+    "health_reduce": {
+        "type": "origins:attribute",
+        "modifier": {
+            "attribute": "minecraft:generic.max_health",
+            "operation": "addition",
+            "value": -6
+        }
+    },
+    "small": {
+        "type": "origins:action_on_callback",
+        "entity_action_gained": {
+        "type": "origins:and",
+        "actions": [{
+            "type": "origins:execute_command",
+            "command": "scale set pehkui:height 0.9 @s"
+        }, {
+            "type": "origins:execute_command",
+            "command": "scale set pehkui:width 0.9 @s"
+        }]},
+        "entity_action_lost": {
+        "type": "origins:and",
+        "actions": [{
+            "type": "origins:execute_command",
+            "command": "scale set pehkui:height 1 @s"
+        }, {
+            "type": "origins:execute_command",
+            "command": "scale set pehkui:width 1 @s"
+        }]}
+    },
+    "badges": [{
+        "sprite": "minecraft:textures/item/apple.png",
+        "text": "-10% Size, -3 Hearts"
+    }]
+}

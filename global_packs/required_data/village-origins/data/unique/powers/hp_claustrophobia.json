@@ -1,0 +1,37 @@
+{
+    "name": "Claustrophobia",
+    "description": "Tight spaces leave you vulnerable and afraid. Debuffs are applied while around natural stone.",
+    "type": "origins:stacking_status_effect",
+    "min_stacks": -2,
+    "max_stacks": 2,
+    "duration_per_stack": 10,
+    "effects": [{
+        "effect": "minecraft:weakness",
+        "is_ambient": true,
+        "show_particles": false,
+        "show_icon": true
+    },
+    {
+        "effect": "minecraft:slowness",
+        "is_ambient": true,
+        "show_particles": false,
+        "show_icon": true
+    }],
+    "condition": {
+        "type": "origins:and",
+        "conditions": [{
+            "type": "origins:exposed_to_sky",
+            "inverted": true
+        }, {
+            "type": "origins:block_in_radius",
+            "block_condition": {
+                "type": "origins:in_tag",
+                "tag": "origins:natural_stone"
+            },
+            "radius": 3,
+            "shape": "cube",
+            "comparison": ">=",
+            "compare_to": 99
+        }]
+    }
+}

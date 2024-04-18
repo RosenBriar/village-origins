@@ -1,0 +1,76 @@
+{
+    "name": "Gale",
+    "description": "Yes, the name of this power is a Zelda reference.\n\nBehaves differently when used on the ground vs. used while gliding. Can only be used twice in the air before requiring the user to land.",
+    "type": "origins:multiple",
+    "charge": {
+        "type": "origins:resource",
+        "min": 0,
+        "max": 2,
+        "start_value": 2
+    },
+    "recover": {
+        "type": "origins:action_on_land",
+        "entity_action": {
+            "type": "origins:change_resource",
+            "resource": "*:*_charge",
+            "change": 2
+        }
+    },
+    "launch": {
+        "type": "origins:launch",
+        "cooldown": 100,
+        "sound": "minecraft:entity.parrot.fly",
+        "speed": 1.5,
+        "key": {
+            "key": "key.origins.primary_active",
+            "continuous": false
+        },
+        "condition": {
+            "type": "origins:on_block"
+        }
+    },
+    "dash": {
+        "type": "origins:active_self",
+        "cooldown": 100,
+        "hud_render": {
+            "bar_index": 4
+        },
+        "entity_action": {
+            "type": "origins:and",
+            "actions": [{
+                "type": "origins:play_sound",
+                "sound": "minecraft:entity.parrot.fly",
+                "volume": 1.5,
+                "pitch": 0.65
+            }, {
+                "type": "origins:add_velocity",
+                "space": "local",
+                "client": false,
+                "y": 0.2,
+                "z": 1
+            }, {
+                "type": "origins:change_resource",
+                "resource": "*:*_charge",
+                "change": -1
+            }, {
+                "type": "origins:exhaust",
+                "amount": 4
+            }]
+        },
+        "key": {
+            "key": "key.origins.primary_active",
+            "continuous": false
+        },
+        "condition": {
+            "type": "origins:and",
+            "conditions": [{
+                "type": "origins:fall_flying"
+            }, {
+                "type": "origins:resource",
+                "resource": "*:*_charge",
+                "comparison": ">",
+                "compare_to": 0
+            }]
+        }
+    }
+}

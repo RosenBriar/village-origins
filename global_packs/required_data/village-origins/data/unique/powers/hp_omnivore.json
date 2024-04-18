@@ -1,0 +1,28 @@
+{
+    "name": "Bird Seed",
+    "description": "Food is limited down to unprocessed ingredients, with the bonus of being able to eat wheat.",
+    "type": "origins:multiple",
+    "diet": {
+        "type": "origins:prevent_item_use",
+        "item_condition": {
+            "type": "origins:ingredient",
+            "ingredient": {
+                "tag": "general:culinary"
+            }
+        }
+    },
+    "wheat": {
+        "type": "origins:edible_item",
+        "item_condition": {
+            "type": "origins:ingredient",
+            "ingredient": {
+                "item": "minecraft:wheat"
+            }
+        },
+        "food_component": {
+            "hunger": 2,
+            "saturation": 1
+        },
+        "use_action": "eat"
+    }
+}

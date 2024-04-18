@@ -8,7 +8,8 @@
         "unique:lizardfolk",
         "unique:dragonborn",
         "human:monk",
-        "human:giant"
+        "human:giant",
+        "unique:harpy"
     ],
     "default_origin": "general:common",
     "gui_title": {

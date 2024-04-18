@@ -1,0 +1,25 @@
+{
+    "name": "Arm-and-a-Half Wingspan",
+    "description": "Gain the ability to glide anywhere. While gliding, you are unable to interact with items.",
+    "type": "origins:multiple",
+    "flight": {
+        "type": "origins:elytra_flight",
+        "render_elytra": true
+    },
+    "outstretch": {
+        "type": "origins:prevent_item_use",
+        "condition": {
+            "type": "origins:fall_flying"
+        }
+    },
+    "anticheese": {
+        "type": "origins:disable_regen",
+        "condition": {
+            "type": "origins:fall_flying"
+        }
+    },
+    "badges": [{
+        "sprite": "minecraft:textures/item/elytra.png",
+        "text": "Natural Elytra; does not conflict with chestplates."
+    }]
+}

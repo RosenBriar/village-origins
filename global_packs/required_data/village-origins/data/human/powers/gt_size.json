@@ -30,6 +30,6 @@
     },
     "badges": [{
         "sprite": "minecraft:textures/item/apple.png",
-        "text": "+50% Larger, +2 Hearts"
+        "text": "+50% Size, +2 Hearts"
     }]
 }
