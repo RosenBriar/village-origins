@@ -2,7 +2,7 @@
   "game": "minecraft",
   "formatVersion": 1,
   "versionId": "1.0.0",
-  "name": "Telidos_1.5.0",
+  "name": "Telidos_1.6.0",
   "summary": "",
   "files": [
     {
@@ -529,21 +529,6 @@
         "https://cdn.modrinth.com/data/1eAoo2KR/versions/u6jV7Q7R/yet-another-config-lib-fabric-3.2.1%2B1.20.2.jar"
       ],
       "fileSize": 963185
-    },
-    {
-      "path": "mods/Nullscape_1.20.4_v1.2.4.jar",
-      "hashes": {
-        "sha1": "c70810239c6613868c61381dcc4415a9f09c04df",
-        "sha512": "c6012c383432e8ccdac42ed76c13461802e2687657b0a037daa56b81f2e1542ea976451caaffa421f88efb3e3a53d955845f7f0ae54e8826fcaedac9b08005d6"
-      },
-      "env": {
-        "server": "required",
-        "client": "required"
-      },
-      "downloads": [
-        "https://cdn.modrinth.com/data/LPjGiSO4/versions/zO4Fl1np/Nullscape_1.20.4_v1.2.4.jar"
-      ],
-      "fileSize": 319521
     },
     {
       "path": "mods/BadOptimizations-2.1.0.jar",
