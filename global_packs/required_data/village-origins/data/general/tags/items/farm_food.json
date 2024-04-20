@@ -1,0 +1,22 @@
+{
+    "replace": true,
+    "values": [
+        "minecraft:melon_slice",
+        "minecraft:carrot",
+        "minecraft:golden_carrot",
+        "minecraft:potato",
+        "minecraft:baked_potato",
+        "minecraft:poisonous_potato",
+        "minecraft:beetroot",
+        "minecraft:bread",
+        "minecraft:cookie",
+        "minecraft:pumpkin_pie",
+        "minecraft:beetroot_soup",
+
+        "additionaladditions:berry_pie",
+        "additionaladditions:fried_egg",
+        "additionaladditions:chicken_nugget",
+        "legacies_and_legends:bottomless_beetroot",
+        "legacies_and_legends:bottomless_beetroot_soup"
+    ]
+}

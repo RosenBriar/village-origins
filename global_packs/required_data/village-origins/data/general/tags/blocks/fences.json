@@ -1,0 +1,32 @@
+{
+    "replace": true,
+    "values": [
+        "minecraft:oak_fence",
+        "minecraft:oak_fence_gate",
+        "minecraft:spruce_fence",
+        "minecraft:spruce_fence_gate",
+        "minecraft:birch_fence",
+        "minecraft:birch_fence_gate",
+        "minecraft:jungle_fence",
+        "minecraft:jungle_fence_gate",
+        "minecraft:acacia_fence",
+        "minecraft:acacia_fence_gate",
+        "minecraft:dark_oak_fence",
+        "minecraft:dark_oak_fence_gate",
+        "minecraft:mangrove_fence",
+        "minecraft:mangrove_fence_gate",
+        "minecraft:cherry_fence",
+        "minecraft:cherry_fence_gate",
+        "minecraft:bamboo_fence",
+        "minecraft:bamboo_fence_gate",
+        "minecraft:crimson_fence",
+        "minecraft:crimson_fence_gate",
+        "minecraft:warped_fence",
+        "minecraft:warped_fence_gate",
+        "minecraft:nether_brick_fence",
+        "minecraft:iron_bar",
+        "minecraft:chain",
+
+        "blockexpansion:red_nether_brick_fence"
+    ]
+}

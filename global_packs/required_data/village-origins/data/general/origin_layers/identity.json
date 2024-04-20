@@ -9,7 +9,8 @@
         "unique:dragonborn",
         "human:monk",
         "human:giant",
-        "unique:harpy"
+        "unique:harpy",
+        "human:trailblazer"
     ],
     "default_origin": "general:common",
     "gui_title": {

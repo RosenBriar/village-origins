@@ -17,6 +17,3 @@ Something like an aquatic Shulk; a beast that can raise earth but functions spec
 
 - A Cost: Something powerful like this should probably have a material drain, but Coreforged has already taken care of fuel usage. Maybe they could share a common hinderance? Possibly also consume prismarine shards for drilling. But how common are prismarine shards? It's difficult to say, given the fact that it's a generally useless item.
 After thinking it through, I'll go with a resource that just augments the power, making it stronger so long as prismarine shards are active.
-
-## Harpy
-A half-human half-bird, gaining the ability of flight without losing the majority of advantages humanoids have. Their abilities come at a cost however, making them vulnerable both in flight and on the ground.

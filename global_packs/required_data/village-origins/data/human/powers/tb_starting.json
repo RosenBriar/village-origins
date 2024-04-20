@@ -1,0 +1,16 @@
+{
+    "type": "origins:starting_equipment",
+    "stacks": [
+        {
+            "item": "minecraft:compass"
+        },
+        {
+            "item": "minecraft:lead",
+            "amount": 2
+        },
+        {
+            "item": "minecraft:saddle"
+        }
+    ],
+    "hidden": true
+}

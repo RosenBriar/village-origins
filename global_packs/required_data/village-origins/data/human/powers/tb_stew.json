@@ -1,0 +1,117 @@
+{
+    "name": "Survivalist",
+    "description": "Killing zombies will have a chance to drop mushrooms.\n\nMushroom Stews grant extra hunger. In standard mushroom stew, one mushroom can be substituted for bone marrow.\nRotten flesh does not inflict hunger, but loses half its effectiveness.\nFood primarily sourced from farming is halved in effectiveness as well.",
+    "type": "origins:multiple",
+    "shroomlord": {
+        "type": "origins:replace_loot_table",
+        "replace": {
+            "minecraft:entities/zombie": "human:entities/tb_zombie"
+        },
+        "priority": 1
+    },
+    "stewlord": {
+        "type": "origins:modify_food",
+        "item_condition": {
+            "type": "origins:ingredient",
+            "ingredient": {
+                "tag": "general:stew"
+            }
+        },
+        "food_modifier": {
+            "operation": "multiply_base_multiplicative",
+            "value": 0.5
+        },
+        "saturation_modifier": {
+            "operation": "addition",
+            "value": 0.3
+        }
+    },
+    "bonelord_brown": {
+        "type": "origins:recipe",
+        "recipe": {
+            "id": "human:trailblazer/brown_bonemarrow_stew",
+            "type": "minecraft:crafting_shapeless",
+            "ingredients": [
+                {
+                    "item": "minecraft:bone"
+                },
+                {
+                    "item": "minecraft:brown_mushroom"
+                },
+                {
+                    "item": "minecraft:bowl"
+                }
+            ],
+            "result": {
+                "item": "minecraft:mushroom_stew"
+            }
+        }
+    },
+    "bonelord_red": {
+        "type": "origins:recipe",
+        "recipe": {
+            "id": "human:trailblazer/red_bonemarrow_stew",
+            "type": "minecraft:crafting_shapeless",
+            "ingredients": [
+                {
+                    "item": "minecraft:bone"
+                },
+                {
+                    "item": "minecraft:red_mushroom"
+                },
+                {
+                    "item": "minecraft:bowl"
+                }
+            ],
+            "result": {
+                "item": "minecraft:mushroom_stew"
+            }
+        }
+    },
+    "fleshlord": {
+        "type": "origins:modify_food",
+        "item_condition": {
+            "type": "origins:ingredient",
+            "ingredient": {
+                "item": "minecraft:rotten_flesh"
+            }
+        },
+        "food_modifier": {
+            "operation": "multiply_base_multiplicative",
+            "value": -0.5
+        },
+        "saturation_modifier": {
+            "operation": "set_base",
+            "value": 0
+        },
+        "prevent_effects": true
+    },
+    "hunter_gatherer": {
+        "type": "origins:modify_food",
+        "item_condition": {
+            "type": "origins:ingredient",
+            "ingredient": {
+                "tag": "general:farm_food"
+            }
+        },
+        "food_modifier": {
+            "operation": "multiply_base_multiplicative",
+            "value": -0.5
+        },
+        "saturation_modifier": {
+            "operation": "set_base",
+            "value": 0
+        },
+        "prevent_effects": true
+    },
+    "badges": [{
+        "sprite": "minecraft:textures/item/rabbit_stew.png",
+        "text": "+50% Hunger, +30% Saturation from Stew"
+    }, {
+        "sprite": "minecraft:textures/item/rotten_flesh.png",
+        "text": "-50% Hunger, -100% Saturation from Rotten Flesh"
+    }, {
+        "sprite": "minecraft:textures/item/wheat.png",
+        "text": "-50% Hunger, -100% Saturation from Crops & Associated Products"
+    }]
+}

@@ -1,0 +1,53 @@
+{
+    "type": "origins:multiple",
+    "hidden": true,
+    "survive": {
+        "type": "origins:modify_damage_taken",
+        "modifier": {
+            "operation": "multiply_base_multiplicative",
+            "value": -0.5
+        }
+    },
+    "strive": {
+        "type": "origins:action_on_callback",
+        "entity_action_gained": {
+            "type": "origins:and",
+            "actions": [{
+                "type": "origins:execute_command",
+                "command": "scale set pehkui:step_height 2 @s"
+            }]
+        },
+        "entity_action_lost": {
+            "type": "origins:and",
+            "actions": [{
+                "type": "origins:execute_command",
+                "command": "scale set pehkui:step_height 1 @s"
+            }]
+        }
+    },
+    "jesus_horse": {
+        "type": "origins:walk_on_fluid",
+        "fluid": "minecraft:water",
+        "condition": {
+            "type": "origins:fluid_height",
+            "fluid": "minecraft:water",
+            "comparison": "<=",
+            "compare_to": 0.4
+        }
+    },
+    "nerf_jesus_horse": {
+        "type": "origins:conditioned_attribute",
+        "modifier": {
+            "attribute": "minecraft:generic.movement_speed",
+            "value": -0.5,
+            "operation": "multiply_base"
+        },
+        "tick_rate": 10,
+        "condition": {
+            "type": "origins:fluid_height",
+            "fluid": "minecraft:water",
+            "comparison": ">",
+            "compare_to": 0
+        }
+    }
+}
