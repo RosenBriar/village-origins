@@ -10,6 +10,19 @@ import crafttweaker.api.recipe.SmithingRecipeManager;
 import crafttweaker.api.recipe.StoneCutterManager;
 import crafttweaker.api.tag.manager.type.KnownTagManager;
 import crafttweaker.api.villagers.VillagerTrades;
+import crafttweaker.api.item.tooltip.ITooltipFunction;
+import crafttweaker.api.text.Component;
+import crafttweaker.api.loot.condition.builder.LootConditionBuilder;
+import crafttweaker.api.loot.condition.DamageSourceLootCondition;
+import crafttweaker.api.predicate.DamageSourcePredicate;
+import crafttweaker.api.loot.condition.KilledByPlayerLootCondition;
+import crafttweaker.api.loot.condition.WeatherCheckLootCondition;
+import crafttweaker.api.loot.modifier.CommonLootModifiers;
+import crafttweaker.api.loot.condition.LootConditions;
+import crafttweaker.api.predicate.EntityPredicate;
+import crafttweaker.api.predicate.EntityEquipmentPredicate;
+import crafttweaker.api.predicate.ItemPredicate;
+import crafttweaker.api.block.Block;
 
 var disabled_items = <tag:items:blockexpansion:piglin_loved>;
 var web = <item:minecraft:string>;
@@ -38,8 +51,10 @@ var leather = <item:minecraft:leather>;
 var woodslab = <tag:items:minecraft:wooden_slabs>;
 var log = <tag:items:minecraft:logs_that_burn>;
 var tuff = <item:minecraft:tuff>;
-
+var obby = <item:minecraft:crying_obsidian>;
+var glass = <item:minecraft:glass>;
 //Recipe Changes
+
 recipes.remove(<item:blockexpansion:cut_lapis_slab>);
 craftingTable.addShaped("tuffslab", <item:blockexpansion:cut_lapis_slab> * 6, [
 	[tuff, tuff, tuff]]);
@@ -81,7 +96,7 @@ craftingTable.addShapeless("crimson_propagation", <item:minecraft:crimson_nylium
 
 villagerTrades.removeTradesSelling(<profession:minecraft:librarian>, 1, <item:minecraft:enchanted_book>);
 villagerTrades.removeTradesSelling(<profession:minecraft:librarian>, 3, <item:minecraft:enchanted_book>);
- 
+
 //Disabling Items
 <tagmanager:items>.addId(disabled_items,
 <resource:blockexpansion:obsidian_brick_slab>,<resource:blockexpansion:obsidian_brick_stairs>,<resource:blockexpansion:obsidian_brick_pillar>,<resource:blockexpansion:obsidian_brick_wall>,<resource:blockexpansion:cracked_obsidian_bricks>,
@@ -89,9 +104,16 @@ villagerTrades.removeTradesSelling(<profession:minecraft:librarian>, 3, <item:mi
 <resource:blockexpansion:cut_iron>,<resource:blockexpansion:cut_iron_slab>,<resource:blockexpansion:cut_iron_stairs>,
 <resource:blockexpansion:cut_netherite>,<resource:blockexpansion:cut_netherite_slab>,<resource:blockexpansion:cut_netherite_stairs>,
 <resource:blockexpansion:cut_diamond>,<resource:blockexpansion:cut_diamond_slab>,<resource:blockexpansion:cut_diamond_stairs>,
-<resource:blockexpansion:cut_lapis>,<resource:blockexpansion:cut_coal_slab>,<resource:blockexpansion:cut_coal_stairs>,
+<resource:blockexpansion:cut_lapis>,<resource:blockexpansion:cut_coal_slab>,<resource:blockexpansion:cut_coal_stairs>,<resource:blockexpansion:obsidian_bricks>,
 <resource:basicweapons:wooden_spear>,<resource:basicweapons:stone_spear>,<resource:basicweapons:iron_spear>,<resource:basicweapons:golden_spear>,<resource:basicweapons:diamond_spear>,<resource:basicweapons:netherite_spear>,
 <resource:basicweapons:wooden_quarterstaff>,<resource:basicweapons:stone_quarterstaff>,<resource:basicweapons:iron_quarterstaff>,<resource:basicweapons:golden_quarterstaff>,<resource:basicweapons:diamond_quarterstaff>,<resource:basicweapons:netherite_quarterstaff>
 );
 recipes.remove(disabled_items);
 <tag:items:c:hidden_from_recipe_viewers>.add(disabled_items);
+
+loot.modifiers.register(
+    "add_diamonds_2",
+    LootConditions.none(),
+    CommonLootModifiers.remove(obby)
+);
+disabled_items.asIIngredient().addTooltip(Component.literal("Disabled! Please do not use.").setStyle(<constant:formatting:red>));
