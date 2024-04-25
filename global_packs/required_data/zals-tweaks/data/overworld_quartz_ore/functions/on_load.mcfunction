@@ -2,8 +2,5 @@ gamerule playersSleepingPercentage 50
 gamerule sendCommandFeedback true
 gamerule keepInventory true
 gamerule doInsomnia false
-gamerule mobGriefing false
-gamerule doTraderSpawning false
-gamerule mobExplosionDropDecay false
-gamerule tntExplosionDropDecay true
-gamerule doVinesSpread false
+gamerule portalsAllowCryingObsidian false
+gamerule portalsAllowCustomShapes false
