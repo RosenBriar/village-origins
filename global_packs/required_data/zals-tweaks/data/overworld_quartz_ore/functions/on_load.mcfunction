@@ -3,4 +3,4 @@ gamerule sendCommandFeedback true
 gamerule keepInventory true
 gamerule doInsomnia false
 gamerule portalsAllowCryingObsidian false
-gamerule portalsAllowCustomShapes false
+
