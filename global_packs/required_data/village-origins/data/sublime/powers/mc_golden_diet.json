@@ -2,5 +2,60 @@
     "name": "A Heavenly Feast",
     "description": "You are not of this world, child. Feast only on that the gods find worthy, lest you mistake yourself for a mortal.",
     "type": "origins:multiple",
-    ""
+    "gold_ingot": {
+        "type": "origins:edible_item",
+        "item_condition": {
+            "type": "origins:ingredient",
+            "ingredient": {
+                "item": "minecraft:gold_ingot"
+            }
+        },
+        "food_component": {
+            "hunger": 4,
+            "saturation": 0.75,
+            "meat": false
+        },
+        "use_action": "eat",
+        "result_stack": {
+            "item": "minecraft:gold_nugget",
+            "amount": 1
+        }
+    },
+    "glistering_melon": {
+        "type": "origins:edible_item",
+        "item_condition": {
+            "type": "origins:ingredient",
+            "ingredient": {
+                "item": "minecraft:glistering_melon_slice"
+            }
+        },
+        "food_component": {
+            "hunger": 2,
+            "saturation": 1.25,
+            "meat": false
+        },
+        "use_action": "eat"
+    },
+    "royal_diet": {
+        "name": "Worthy Diet",
+        "type": "origins:prevent_item_use",
+        "item_condition": {
+            "type": "origins:and",
+            "conditions": [{
+                "type": "origins:food"
+            }, {
+                "type": "origins:ingredient",
+                "ingredient": {
+                    "tag": "general:royal_diet"
+                },
+                "inverted": true
+            }, {
+                "type": "origins:ingredient",
+                "ingredient": {
+                    "item": "brewery:drink_bottle"
+                },
+                "inverted": true
+            }]
+        }
+    }
 }
