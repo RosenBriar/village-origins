@@ -12,6 +12,11 @@
                 "tag": "general:coals"
             },
             "inverted": true
+        }, {
+            "type": "origins:ingredient",
+            "ingredient": {
+                "type": "brewery:drink_bottle"
+            }
         }]
     }
 }

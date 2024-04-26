@@ -1,0 +1,9 @@
+{
+    "name": "Sublimity",
+    "description": "This origin/identity is an embodiment of a natural phenomenon or is otherwise designed around a vague concept.",
+    "type": "origins:simple",
+    "badges": [{
+        "sprite": "minecraft:textures/item/string.png",
+        "text": "Complex"
+    }]
+}

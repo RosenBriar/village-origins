@@ -1,0 +1,13 @@
+{
+    "name": "Moonchild",
+    "description": "What is moonlight without her patron to bring out its natural beauty?",
+    "icon": "minecraft:snowball",
+    "impact": 2,
+    "powers": [
+        "sublime:all_sublime",
+        "sublime:mc_aura",
+        "sublime:mc_moonjump",
+        "sublime:mc_grasp",
+        "sublime:mc_stats"
+    ]
+}

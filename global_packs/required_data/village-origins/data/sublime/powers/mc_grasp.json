@@ -1,0 +1,46 @@
+{
+    "name": "Grasp the Stars",
+    "description": "Reach out your palm, young moon. Let those you desire enter your grasp.",
+    "type": "origins:multiple",
+    "levitate": {
+        "type": "origins:entity_set",
+        "action_on_add": {
+            "type": "origins:target_action",
+            "action": {
+                "type": "origins:and",
+                "actions": [{
+                    "type": "origins:apply_effect",
+                    "effect": {
+                    "effect": "minecraft:levitation",
+                    "duration": 100,
+                    "amplifier": 2,
+                    "is_ambient": true
+                    }
+                }, {
+                    "type": "origins:delay",
+                    "ticks": 110,
+                    "action": {
+                        "type": "origins:add_velocity",
+                        "set": true,
+                        "y": -2
+                    }
+                }]
+            }
+        }
+    },
+    "mark": {
+        "type": "origins:action_on_hit",
+        "bientity_action": {
+            "type": "origins:add_to_set",
+            "set": "*:*_levitate",
+            "time_limit": 200
+        },
+        "condition": {
+            "type": "origins:equipped_item",
+            "equipment_slot": "mainhand",
+            "item_condition": {
+                "type": "origins:empty"
+            }
+        }
+    }
+}

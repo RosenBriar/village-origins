@@ -10,7 +10,8 @@
         "human:monk",
         "human:giant",
         "unique:harpy",
-        "human:trailblazer"
+        "human:trailblazer",
+        "sublime:moonchild"
     ],
     "default_origin": "general:common",
     "gui_title": {

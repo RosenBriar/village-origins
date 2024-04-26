@@ -1,0 +1,45 @@
+{
+    "name": "Lunar Aspect",
+    "description": "The moon sits in her older sister's shadow. Though her shine is not her own, it can easily be mistaken otherwise.",
+    "type": "origins:multiple",
+    "drain": {
+        "type": "origins:model_color",
+        "red": 0.75,
+        "green": 0.75,
+        "blue": 0.75,
+        "alpha": 0.9,
+        "condition": {
+            "type": "origins:daytime"
+        }
+    },
+    "shimmer": {
+        "type": "origins:particle",
+        "particle": "minecraft:electric_spark",
+        "count": 4,
+        "frequency": 4,
+        "spread": {
+            "x": 0.4,
+            "y": 0.3,
+            "z": 0.4
+        },
+        "offset_y": 1,
+        "condition": {
+            "type": "origins:daytime",
+            "inverted": true
+        }
+    },
+    "shine": {
+        "type": "origins:self_glow",
+        "use_teams": false,
+        "red": 0.75,
+        "green": 0.75,
+        "blue": 0.8,
+        "condition": {
+            "type": "origins:daytime",
+            "inverted": true
+        },
+        "bientity_condition": {
+            "type": "origins:can_see"
+        }
+    }    
+}

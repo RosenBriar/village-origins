@@ -1,0 +1,30 @@
+{
+    "name": "Celestial Lineage",
+    "description": "Its body is warped and twisted by unknown forces.",
+    "type": "origins:multiple",
+    "normal": {
+        "type": "origins:modify_falling",
+        "velocity": 0.08,
+        "take_fall_damage": false
+    },
+    "float": {
+        "type": "origins:modify_falling",
+        "velocity": 0.04,
+        "take_fall_damage": false,
+        "condition": {
+            "type": "origins:sneaking"
+        }
+    },
+    "damage_cap": {
+        "type": "origins:modify_damage_dealt",
+        "damage_condition": {
+            "type": "origins:amount",
+            "comparison": ">",
+            "compare_to": 8
+        },
+        "modifier": {
+            "operation": "set_total",
+            "value": 8
+        }
+    }
+}
