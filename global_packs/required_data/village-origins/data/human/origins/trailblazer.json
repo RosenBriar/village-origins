@@ -2,7 +2,7 @@
     "name": "Trailblazer",
     "description": "Through sand and clay, the song of the valley rings with awe.",
     "icon": "minecraft:filled_map",
-    "impact": 3,
+    "impact": 2,
     "powers": [
         "human:all_humanpack",
         "human:tb_stew",

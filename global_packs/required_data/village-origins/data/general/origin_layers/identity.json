@@ -11,7 +11,8 @@
         "human:giant",
         "unique:harpy",
         "human:trailblazer",
-        "sublime:moonchild"
+        "sublime:moonchild",
+        "sublime:watcher"
     ],
     "default_origin": "general:common",
     "gui_title": {

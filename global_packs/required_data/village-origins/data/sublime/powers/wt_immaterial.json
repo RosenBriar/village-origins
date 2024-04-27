@@ -1,0 +1,49 @@
+{
+    "name": "Immaterial Being",
+    "description": "You are not of this realm. Positive effects are cancelled, but you have night vision while deep underground or in the nether.",
+    "type": "origins:multiple",
+    "positive_neutralization": {
+        "type": "origins:effect_immunity",
+        "effects": [
+            "minecraft:speed",
+            "minecraft:haste",
+            "minecraft:strength",
+            "minecraft:instant_health",
+            "minecraft:jump_boost",
+            "minecraft:regeneration",
+            "minecraft:resistance",
+            "minecraft:fire_resistance",
+            "minecraft:water_breathing",
+            "minecraft:invisibility",
+            "minecraft:night_vision",
+            "minecraft:health_boost",
+            "minecraft:absorption",
+            "minecraft:saturation",
+            "minecraft:luck",
+            "minecraft:slow_falling",
+            "minecraft:conduit_power",
+            "minecraft:dolphins_grace",
+            "minecraft:hero_of_the_village"
+        ]
+    },
+    "night_sight": 
+    {
+        "type": "origins:night_vision",
+        "strength": 0.5,
+        "condition": {
+            "type": "origins:and",
+            "conditions": [{
+                "type": "origins:on_block",
+                "block_condition": {
+                    "type": "origins:height",
+                    "comparison": "<",
+                    "compare_to": 63
+                }
+            }, {
+                "type": "origins:dimension",
+                "dimension": "minecraft:the_nether",
+                "inverted": true
+            }]
+        }
+    }    
+}

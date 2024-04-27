@@ -1,0 +1,35 @@
+{
+    "type": "origins:action_over_time",
+    "rising_action": {
+        "type": "origins:and",
+        "actions": [{
+            "type": "origins:play_sound",
+            "sound": "minecraft:entity.enderman.teleport",
+            "volume": 1.5,
+            "pitch": 0.9
+        }, {
+            "type": "origins:execute_command",
+            "command": "tp @s ~ ~-5 ~"
+        }]
+    },
+    "interval": 10,
+    "condition": {
+        "type": "origins:and",
+        "conditions": [{
+            "type": "origins:dimension",
+            "dimension": "minecraft:the_nether"
+        }, {
+            "type": "origins:distance_from_coordinates",
+            "offset": {
+                "y": 192
+            },
+            "scale_reference_to_dimension": false,
+            "round_to_digit": 0,
+            "ignore_x": true,
+            "ignore_z": true,
+            "shape": "cube",
+            "comparison": "<=",
+            "compare_to": 3
+        }]
+    }
+}
