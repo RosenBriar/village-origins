@@ -14,7 +14,6 @@
         "sublime:moonchild",
         "sublime:watcher"
     ],
-    "default_origin": "general:common",
     "gui_title": {
         "choose_origin": "What is your Identity?",
         "view_origin": "This is your Identity."

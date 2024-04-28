@@ -3,7 +3,6 @@
         "minecraft:player"
     ],
     "powers": [
-        "general:gl_orb_origin",
         "general:no_pet_dmg",
         "general:gl_nether_roof"
     ]
