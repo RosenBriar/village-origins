@@ -28,7 +28,6 @@ var disabled_items = <tag:items:blockexpansion:piglin_loved>;
 var web = <item:minecraft:string>;
 var air = <item:minecraft:air>;
 var redstone_dust = <item:minecraft:redstone>;
-var straw = <tag:items:supplementaries:straw>;
 var sea_lantern = <item:minecraft:sea_lantern>;
 var cobble = <tag:items:minecraft:stone_tool_materials>;
 var brewing_stand = <item:minecraft:brewing_stand>;
@@ -87,6 +86,12 @@ craftingTable.remove(<item:minecraft:nether_bricks>);
 craftingTable.addShaped("cheapnetherbrick", <item:minecraft:nether_bricks> * 4, [
 	[nether_brick, nether_brick],
 	[nether_brick, nether_brick]]);
+
+craftingTable.remove(<item:minecraft:respawn_anchor>);
+craftingTable.addShaped("fixedanchor", <item:minecraft:respawn_anchor>, [
+	[obsidian, obsidian, obsidian],
+	[blaze_powder, echo_shard, blaze_powder],
+	[obsidian, obsidian, obsidian]]);
 	
 craftingTable.addShapeless("glowdust", <item:minecraft:glowstone_dust> * 2, [<item:minecraft:glow_berries>]);
 craftingTable.addShapeless("alchvap", <item:minecraft:dragon_breath> * 2, [<item:minecraft:glass_bottle>, <item:minecraft:dragon_breath>, blaze_powder]);
