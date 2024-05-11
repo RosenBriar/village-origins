@@ -426,21 +426,6 @@
       "fileSize": 517710
     },
     {
-      "path": "mods/bigger_end_cities-1.20.2-1.0.4.jar",
-      "hashes": {
-        "sha512": "c0068426b6428b244325b25b0b85a0b2ef6b473546c77f46f05ffe91a67773824eddae9d82b17fd1398f655b2b61cb624d0684bd770a5ef1b2daea4bd8733008",
-        "sha1": "3e16228d3cad0ff6f8c1fe5fa0668b5c0c69b2a8"
-      },
-      "env": {
-        "server": "required",
-        "client": "required"
-      },
-      "downloads": [
-        "https://cdn.modrinth.com/data/A1ySbDYD/versions/im2mCcQh/bigger_end_cities-1.20.2-1.0.4.jar"
-      ],
-      "fileSize": 29674
-    },
-    {
       "path": "mods/block expansion-1.2.6-1.20.2.jar",
       "hashes": {
         "sha512": "d5e9f7c53bb0bbcced8e7b1f55646b9e61e0eb11ed6e3eeb2cd37476f3cbe95d824da7f5429f66a81c1a6c5eebaaa540280d14a70583cf471add7f4f7e344694",
@@ -619,22 +604,7 @@
         "https://cdn.modrinth.com/data/KX1XC0Oo/versions/BwXBXbwA/formationsoverworld-1.0.2.jar"
       ],
       "fileSize": 834288
-    },
-    {
-      "path": "mods/DistantFriends-fabric-1.20.2-0.6.1.jar",
-      "hashes": {
-        "sha1": "9906d4ddb1a35b678f7dd15d8ab3ed2077c6f20d",
-        "sha512": "c868012f35ba4d124a8eb58bf325b75e861b6ed35d19e1147835c3737dbce5beeb5e60b1fc091f98f422af282aa5e90b5457c782abe220f044b83d73ce70839a"
-      },
-      "env": {
-        "server": "required",
-        "client": "required"
-      },
-      "downloads": [
-        "https://cdn.modrinth.com/data/CDaJ8xGu/versions/p1uPdfmM/DistantFriends-fabric-1.20.2-0.6.1.jar"
-      ],
-      "fileSize": 48810
-    },
+    }
     {
       "path": "mods/nvidium-0.2.5-beta.jar",
       "hashes": {
@@ -1189,21 +1159,6 @@
         "https://cdn.modrinth.com/data/fRiHVvU7/versions/kjfimrqy/emi-1.1.4%2B1.20.2%2Bfabric.jar"
       ],
       "fileSize": 977315
-    },
-    {
-      "path": "mods/eating-animation-1.20+1.9.61.jar",
-      "hashes": {
-        "sha512": "7470cd63b49cd797a21b30fefe11bd53e419ca8ed0eb01f498b801e83222685bbe853e7323f2e310874a3619628fece48ec69ea53cd391dd97a139c64225d077",
-        "sha1": "d5a8909b0b864eb1a7a2d62368932d264eb60317"
-      },
-      "env": {
-        "client": "required",
-        "server": "required"
-      },
-      "downloads": [
-        "https://cdn.modrinth.com/data/rUgZvGzi/versions/AqXSvu6M/eating-animation-1.20%2B1.9.61.jar"
-      ],
-      "fileSize": 1218710
     },
     {
       "path": "mods/FauxCustomEntityData-fabric-1.20.2-7.0.1.jar",
