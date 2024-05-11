@@ -1,0 +1,20 @@
+{
+    "name": "Dash",
+    "description": "Leap forward at significant speed by pressing [PRIMARY].",
+    "type": "origins:active_self",
+    "key": {
+        "key": "key.origins.primary_active"
+    },
+    "cooldown": 30,
+    "entity_action": {
+        "type": "origins:add_velocity",
+        "space": "local_horizontal_normalized",
+        "y": 0.5,
+        "z": 1.5
+    },
+    "hud_render": {
+        "should_render": true,
+        "sprite_location": "minecraft:textures/guis/unique/resource_bar_1.png",
+        "bar_index": 12
+    }
+}

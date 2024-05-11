@@ -1,0 +1,40 @@
+{
+    "hidden": true,
+    "type": "origins:multiple",
+    "fire": {
+        "type": "origins:active_self",
+        "key": {
+            "key": "key.origins.secondary_active"
+        },
+        "cooldown": 1200,
+        "entity_action": {
+            "type": "origins:trigger_cooldown",
+            "power": "sublime:wt_rush_timer"
+        },
+        "hud_render": {
+            "should_render": true,
+            "sprite_location": "minecraft:textures/guis/unique/resource_bar_1.png",
+            "bar_index": 11
+        }
+    },
+    "trigger": {
+        "type": "origins:action_over_time",
+        "condition": {
+            "type": "origins:resource",
+            "resource": "sublime:wt_rush_timer",
+            "comparison": ">",
+            "compare_to": 0
+        },
+        "rising_action": {
+            "type": "origins:grant_power",
+            "power": "sublime:wt_rushdown",
+            "source": "sublime:watcher"
+        },
+        "falling_action": {
+            "type": "origins:revoke_power",
+            "power": "sublime:wt_rushdown",
+            "source": "sublime:watcher"
+        },
+        "interval": 20
+    }
+}

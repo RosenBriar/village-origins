@@ -1,0 +1,11 @@
+{
+    "name": "Rushdown",
+    "description": "Use your [SECONDARY] key to activate a Rushdown mode, where you deal and take more damage, but heal some on each hit.",
+    "type": "origins:cooldown",
+    "cooldown": 600,
+    "hud_render": {
+        "should_render": true,
+        "sprite_location": "minecraft:textures/guis/unique/resource_bar_1.png",
+        "bar_index": 4
+    }
+}

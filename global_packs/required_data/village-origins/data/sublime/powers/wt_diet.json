@@ -1,0 +1,95 @@
+{
+    "name": "Netherese Diet",
+    "description": "You are limited to food easily accessible in the nether (You can eat fungi).",
+    "type": "origins:multiple",
+    "limiter": {
+        "type": "origins:prevent_item_use",
+        "item_condition": {
+            "type": "origins:and",
+            "conditions": [{
+                "type": "origins:food"
+            }, {
+                "type": "origins:ingredient",
+                "ingredient": {
+                    "tag": "general:watcher"
+                },
+                "inverted": true
+            }]
+        }
+    },
+    "brown_mushroom": {
+        "type": "origins:edible_item",
+        "item_condition": {
+            "type": "origins:ingredient",
+            "ingredient": {
+                "item": "minecraft:brown_mushroom"
+            }
+        },
+        "food_component": {
+            "hunger": 2,
+            "saturation": 0.5,
+            "meat": false
+        },
+        "use_action": "eat"
+    },
+    "red_mushroom": {
+        "type": "origins:edible_item",
+        "item_condition": {
+            "type": "origins:ingredient",
+            "ingredient": {
+                "item": "minecraft:red_mushroom"
+            }
+        },
+        "food_component": {
+            "hunger": 2,
+            "saturation": 0.5,
+            "meat": false
+        },
+        "use_action": "eat"
+    },
+    "crimson_fungus": {
+        "type": "origins:edible_item",
+        "item_condition": {
+            "type": "origins:ingredient",
+            "ingredient": {
+                "item": "minecraft:crimson_fungus"
+            }
+        },
+        "food_component": {
+            "hunger": 4,
+            "saturation": 0.5,
+            "meat": false
+        },
+        "use_action": "eat"
+    },
+    "warped_fungus": {
+        "type": "origins:edible_item",
+        "item_condition": {
+            "type": "origins:ingredient",
+            "ingredient": {
+                "item": "minecraft:warped_fungus"
+            }
+        },
+        "food_component": {
+            "hunger": 4,
+            "saturation": 0.5,
+            "meat": false
+        },
+        "use_action": "eat"
+    },
+    "nether_wart": {
+        "type": "origins:edible_item",
+        "item_condition": {
+            "type": "origins:ingredient",
+            "ingredient": {
+                "item": "minecraft:nether_wart"
+            }
+        },
+        "food_component": {
+            "hunger": 3,
+            "saturation": 0.667,
+            "meat": false
+        },
+        "use_action": "eat"
+    }
+}

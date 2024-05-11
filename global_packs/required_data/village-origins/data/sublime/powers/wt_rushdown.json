@@ -1,0 +1,64 @@
+{
+    "type": "origins:multiple",
+    "hidden": true,
+    "brutality": {
+        "type": "origins:modify_damage_dealt",
+        "modifier": {
+            "operation": "add_base_early",
+            "value": 2
+        },
+        "target_action": {
+            "type": "origins:spawn_particles",
+            "particle": {
+                "type": "minecraft:block",
+                "params": "minecraft:redstone_block"
+            },
+            "count": 16,
+            "speed": 0.2,
+            "force": true,
+            "spread": {
+                "x": 0.4,
+                "y": 0.3,
+                "z": 0.4
+            }
+        },
+        "self_action": {
+            "type": "origins:chance",
+            "action": {
+                "type": "origins:heal",
+                "amount": 1
+            },
+            "chance": 0.34
+        }
+    },
+    "vulnerability": {
+        "type": "origins:modify_damage_taken",
+        "modifier": {
+            "operation": "add_base_early",
+            "value": 2
+        },
+        "self_action": {
+            "type": "origins:spawn_particles",
+            "particle": {
+                "type": "minecraft:block",
+                "params": "minecraft:redstone_block"
+            },
+            "count": 16,
+            "speed": 0.2,
+            "force": true,
+            "spread": {
+                "x": 0.4,
+                "y": 0.3,
+                "z": 0.4
+            }
+        }
+    },
+    "berserk": {
+        "type": "origins:self_action_on_kill",
+        "entity_action": {
+            "type": "origins:change_resource",
+            "resource": "sublime:wt_rush_timer",
+            "change": 5
+        }
+    }
+}

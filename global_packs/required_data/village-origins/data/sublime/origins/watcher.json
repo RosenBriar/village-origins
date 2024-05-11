@@ -5,6 +5,10 @@
     "impact": 2,
     "powers": [
         "sublime:all_sublime",
-        "sublime:wt_immaterial"
+        "sublime:wt_immaterial",
+        "sublime:wt_dash",
+        "sublime:wt_rush_timer",
+        "sublime:wt_trigger_rd",
+        "sublime:wt_diet"
     ]
 }
