@@ -1,0 +1,13 @@
+{
+    "name": "The Lovers",
+    "description": "You will be placed in a team together, unable to damage each other.",
+    "type": "origins:action_on_callback",
+    "action_on_gained": {
+        "type": "origins:execute_command",
+        "command": "team join TheLovers"
+    },
+    "action_on_removed": {
+        "type": "origins:execute_command",
+        "command": "team leave @s"
+    }
+}

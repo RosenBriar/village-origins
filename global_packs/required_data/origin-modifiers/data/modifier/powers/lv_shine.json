@@ -1,0 +1,11 @@
+{
+    "name": "Shining Hearts",
+    "description": "Your love is so intense, it shines through solid matter towards the other's eyes.",
+    "type": "origins:entity_glow",
+    "entity_condition": {
+        "type": "origins:origin",
+        "origin": "modifier:lovers",
+        "layer": "modifier:modifier"
+    },
+    "use_teams": true
+}

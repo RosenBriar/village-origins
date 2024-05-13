@@ -53,7 +53,7 @@
             "resource": "unique:cf_heat",
             "modifier": {
                 "operation": "addition",
-                "value": -3
+                "value": -1
             }
         },
         "condition": {

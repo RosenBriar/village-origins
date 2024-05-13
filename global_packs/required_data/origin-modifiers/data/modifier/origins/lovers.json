@@ -1,0 +1,11 @@
+{
+    "name": "The Lovers",
+    "description": "You and another are bound by life. You will always be connected.",
+    "icon": "minecraft:netherrack",
+    "impact": 2,
+    "powers": [
+        "modifier:lv_join",
+        "modifier:lv_shine"
+    ],
+    "unchoosable": true
+}

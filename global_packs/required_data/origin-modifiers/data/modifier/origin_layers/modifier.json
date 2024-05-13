@@ -1,0 +1,13 @@
+{
+    "order": 2,
+    "missing_name": "None",
+    "missing_description": "Modifiers are minor differences that make you unique compared to your kin.",
+    "origins": [
+        "modifier:lovers"
+    ],
+    "gui_title": {
+        "choose_origin": "What is your Modifier?",
+        "view_origin": "This is your Modifier."
+    },
+    "replace": false
+}

@@ -20,11 +20,11 @@
         "damage_condition": {
             "type": "origins:amount",
             "comparison": ">",
-            "compare_to": 8
+            "compare_to": 10
         },
         "modifier": {
             "operation": "set_total",
-            "value": 8
+            "value": 10
         }
     }
 }

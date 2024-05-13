@@ -1,0 +1,12 @@
+{
+    "type": "origins:modify_damage_taken",
+    "modifier": {
+        "operation": "set_total",
+        "value": 0
+    },
+    "damage_condition": {
+        "type": "origins:type",
+        "damage_type": "fall"
+    },
+    "hidden": true
+}

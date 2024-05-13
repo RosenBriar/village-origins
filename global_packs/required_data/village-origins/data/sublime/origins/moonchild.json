@@ -9,6 +9,7 @@
         "sublime:mc_moonjump",
         "sublime:mc_grasp",
         "sublime:mc_stats",
-        "sublime:mc_golden_diet"
+        "sublime:mc_golden_diet",
+        "sublime:mc_fall_resist"
     ]
 }
