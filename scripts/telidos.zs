@@ -101,6 +101,7 @@ craftingTable.addShapeless("crimson_propagation", <item:minecraft:crimson_nylium
 
 villagerTrades.removeTradesSelling(<profession:minecraft:librarian>, 1, <item:minecraft:enchanted_book>);
 villagerTrades.removeTradesSelling(<profession:minecraft:librarian>, 3, <item:minecraft:enchanted_book>);
+villagerTrades.removeWanderingTrade(3, <item:minecraft:cactus>);
 
 //Disabling Items
 <tagmanager:items>.addId(disabled_items,
@@ -117,8 +118,11 @@ recipes.remove(disabled_items);
 <tag:items:c:hidden_from_recipe_viewers>.add(disabled_items);
 
 loot.modifiers.register(
-    "add_diamonds_2",
+    "ano_obsdian",
     LootConditions.none(),
-    CommonLootModifiers.remove(obby)
-);
+    CommonLootModifiers.remove(obby));
+loot.modifiers.register(
+    "full_disable",
+    LootConditions.none(),
+    CommonLootModifiers.remove(disabled_items));
 disabled_items.asIIngredient().addTooltip(Component.literal("Disabled! Please do not use.").setStyle(<constant:formatting:red>));
