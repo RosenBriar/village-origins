@@ -2,10 +2,12 @@
     "name": "Shining Hearts",
     "description": "Your love is so intense, it shines through solid matter towards the other's eyes.",
     "type": "origins:entity_glow",
-    "entity_condition": {
-        "type": "origins:origin",
-        "origin": "modifier:lovers",
-        "layer": "modifier:modifier"
+    "bientity_condition": {
+        "type": "origins:in_set",
+        "set": "modifier:lv_lover"
     },
-    "use_teams": true
+    "use_teams": false,
+    "red": 0.92941,
+    "green": 0.51764,
+    "blue": 0.75686
 }

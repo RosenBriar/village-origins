@@ -17,8 +17,8 @@
             "volume": 0.75
         },
         "food_component": {
-            "hunger": 2,
-            "saturation": 0
+            "hunger": 3,
+            "saturation": 0.667
         },
         "condition": {
             "type": "origins:submerged_in",
@@ -43,7 +43,7 @@
         },
         "food_component": {
             "hunger": 18,
-            "saturation": 0
+            "saturation": 1
         },
         "priority": 1,
         "condition": {
@@ -70,7 +70,7 @@
         "consume_action": "drink",
         "food_component": {
             "hunger": 20,
-            "saturation": 0.5,
+            "saturation": 1,
             "always_edible": true
         },
         "return_stack": {

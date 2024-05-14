@@ -4,8 +4,9 @@
     "icon": "minecraft:netherrack",
     "impact": 2,
     "powers": [
-        "modifier:lv_join",
-        "modifier:lv_shine"
+        "modifier:lv_propose",
+        "modifier:lv_shine",
+        "modifier:lv_lover"
     ],
     "unchoosable": true
 }

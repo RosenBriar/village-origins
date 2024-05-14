@@ -24,7 +24,7 @@
                 "resource": "unique:cf_heat",
                 "modifier": {
                     "operation": "add_base_early",
-                    "value": -4
+                    "value": -3
                 }
             }]
         },
@@ -43,10 +43,10 @@
                 "type": "origins:resource",
                 "resource": "unique:cf_heat",
                 "comparison": ">=",
-                "compare_to": 4
+                "compare_to": 3
             }]
         },
-        "interval": 60
+        "interval": 40
     },
     "iron_bones": {
         "type": "origins:attribute",

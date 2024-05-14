@@ -1,0 +1,21 @@
+{
+    "type": "origins:action_on_entity_use",
+    "bientity_action": {
+        "type": "origins:add_to_set",
+        "set": "modifier:lv_lover"
+    },
+    "bientity_condition": {
+        "type": "origins:target_condition",
+        "condition": {
+            "type": "origins:origin",
+            "origin": "modifier:lovers",
+            "layer": "modifier:modifier"
+        }
+    },
+    "hands": [
+        "main_hand"
+    ],
+    "condition": {
+        "type": "origins:sneaking"
+    }
+}
