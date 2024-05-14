@@ -133,6 +133,56 @@
     "unique:weaver": {
       "enabled": true,
       "unique:wv_to_see": true
+    },
+    "human:giant": {
+      "enabled": true,
+      "human:all_humanpack": true,
+      "human:gt_size": true,
+      "human:gt_xxxl": true,
+      "human:gt_bulk": true,
+      "human:gt_healthy": true,
+      "human:gt_diet": true
+    },
+    "unique:harpy": {
+      "enabled": true,
+      "unique:hp_wingspan": true,
+      "unique:hp_claustrophobia": true,
+      "unique:hp_gale": true,
+      "unique:hp_omnivore": true,
+      "unique:hp_lightarmor": true,
+      "unique:hp_fragile": true
+    },
+    "human:monk": {
+      "enabled": true,
+      "human:all_humanpack": true,
+      "human:mk_chop": true,
+      "human:mk_athletics": true,
+      "human:mk_crouch_jump": true
+    },
+    "sublime:moonchild": {
+      "enabled": true,
+      "sublime:all_sublime": true,
+      "sublime:mc_aura": true,
+      "sublime:mc_moonjump": true,
+      "sublime:mc_grasp": true,
+      "sublime:mc_stats": true,
+      "sublime:mc_golden_diet": true
+    },
+    "human:trailblazer": {
+      "enabled": true,
+      "human:all_humanpack": true,
+      "human:tb_stew": true,
+      "human:tb_horsegirl": true,
+      "human:tb_starting": true
+    },
+    "sublime:watcher": {
+      "enabled": true,
+      "sublime:all_sublime": true,
+      "sublime:wt_immaterial": true,
+      "sublime:wt_dash": true,
+      "sublime:wt_rush_timer": true,
+      "sublime:wt_trigger_rd": true,
+      "sublime:wt_diet": true
     }
   }
 }
