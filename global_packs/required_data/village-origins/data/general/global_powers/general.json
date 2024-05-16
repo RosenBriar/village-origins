@@ -4,6 +4,7 @@
     ],
     "powers": [
         "general:no_pet_dmg",
-        "general:gl_nether_roof"
+        "general:gl_nether_roof",
+        "general:no_mine_map"
     ]
 }

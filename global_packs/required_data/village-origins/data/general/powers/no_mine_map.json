@@ -1,0 +1,15 @@
+{
+    "type": "origins:stacking_status_effect",
+    "min_stacks": 0,
+    "max_stacks": 2,
+    "tick_rate": 300,
+    "duration_per_stack": 1200,
+    "effects": [
+        {
+            "effect": "xaeroworldmap:no_cave_maps",
+            "is_ambient": true,
+            "show_particles": false,
+            "show_icon": false
+        }
+    ]
+}

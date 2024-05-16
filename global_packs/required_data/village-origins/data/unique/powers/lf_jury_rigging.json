@@ -15,7 +15,7 @@
                 "amount": -1,
                 "ignore_unbreaking": false
             },
-            "chance": 0.5
+            "chance": 0.25
         }
     },
     "only_when_harvested": false

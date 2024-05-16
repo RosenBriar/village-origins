@@ -71,7 +71,7 @@
         "food_component": {
             "hunger": 20,
             "saturation": 1,
-            "always_edible": true
+            "always_edible": false
         },
         "return_stack": {
             "item": "minecraft:bucket",
@@ -79,9 +79,14 @@
         },
         "priority": 1,
         "condition": {
-            "type": "origins:submerged_in",
-            "fluid": "minecraft:water",
-            "inverted": true
+            "type": "origins:and",
+            "conditions": [{
+                "type": "origins:submerged_in",
+                "fluid": "minecraft:water",
+                "inverted": true
+            }, {
+                "type": "origins:sneaking"
+            }]
         }
     }
 }
