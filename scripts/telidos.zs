@@ -126,3 +126,40 @@ loot.modifiers.register(
     LootConditions.none(),
     CommonLootModifiers.remove(disabled_items));
 disabled_items.asIIngredient().addTooltip(Component.literal("Disabled! Please do not use.").setStyle(<constant:formatting:red>));
+
+//Durability Buffs
+var woodd = 16;
+var stoned = 192;
+var irond = 512;
+var diamondd = 2048;
+var netherited = 2560;
+
+
+<item:minecraft:wooden_shovel>.maxDamage = woodd;
+<item:minecraft:wooden_pickaxe>.maxDamage = woodd;
+<item:minecraft:wooden_axe>.maxDamage = woodd;
+<item:minecraft:wooden_hoe>.maxDamage = woodd;
+
+
+<item:minecraft:stone_shovel>.maxDamage = stoned;
+<item:minecraft:stone_pickaxe>.maxDamage = stoned;
+<item:minecraft:stone_axe>.maxDamage = stoned;
+<item:minecraft:stone_hoe>.maxDamage = stoned;
+
+
+<item:minecraft:iron_shovel>.maxDamage = irond;
+<item:minecraft:iron_pickaxe>.maxDamage = irond;
+<item:minecraft:iron_axe>.maxDamage = irond;
+<item:minecraft:iron_hoe>.maxDamage = irond;
+
+
+<item:minecraft:diamond_shovel>.maxDamage = diamondd;
+<item:minecraft:diamond_pickaxe>.maxDamage = diamondd;
+<item:minecraft:diamond_axe>.maxDamage = diamondd;
+<item:minecraft:diamond_hoe>.maxDamage = diamondd;
+
+
+<item:minecraft:netherite_shovel>.maxDamage = netherited;
+<item:minecraft:netherite_pickaxe>.maxDamage = netherited;
+<item:minecraft:netherite_axe>.maxDamage = netherited;
+<item:minecraft:netherite_hoe>.maxDamage = netherited;
