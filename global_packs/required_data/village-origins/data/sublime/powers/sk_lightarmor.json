@@ -1,0 +1,58 @@
+{
+    "type": "origins:restrict_armor",
+    "name": "Lightweight",
+    "description": "It's hard to find good hydrodynamic armor.",
+    "head": {
+        "type": "origins:ingredient",
+        "ingredient": [{
+            "item": "minecraft:golden_helmet"
+        }, {
+            "item": "minecraft:iron_helmet"
+        }, {
+            "item": "minecraft:netherite_helmet"
+        }]
+    },
+    "chest": {
+        "type": "origins:ingredient",
+        "ingredient": [{
+            "item": "minecraft:golden_chestplate"
+        }, {
+            "item": "minecraft:iron_chestplate"
+        }, {
+            "item": "minecraft:netherite_chestplate"
+        }]
+    },
+    "legs": {
+        "type": "origins:ingredient",
+        "ingredient": [{
+            "item": "minecraft:golden_leggings"
+        }, {
+            "item": "minecraft:iron_leggings"
+        }, {
+            "item": "minecraft:netherite_leggings"
+        }]
+    },
+    "feet": {
+        "type": "origins:ingredient",
+        "ingredient": [{
+            "item": "minecraft:golden_boots"
+        }, {
+            "item": "minecraft:iron_boots"
+        }, {
+            "item": "minecraft:netherite_boots"
+        }]
+    },
+    "badges": [{
+        "sprite": "minecraft:textures/item/iron_helmet.png",
+        "text": "Restricted Armors: Iron, Gold, Netherite"
+    }, {
+        "sprite": "minecraft:textures/item/iron_chestplate.png",
+        "text": "Restricted Armors: Iron, Gold, Netherite"
+    }, {
+        "sprite": "minecraft:textures/item/iron_leggings.png",
+        "text": "Restricted Armors: Iron, Gold, Netherite"
+    }, {
+        "sprite": "minecraft:textures/item/iron_boots.png",
+        "text": "Restricted Armors: Iron, Gold, Netherite"
+    }]
+}

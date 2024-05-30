@@ -1,0 +1,10 @@
+{
+    "name": "The Sun",
+    "description": "The day is a paradise with you as its lone resident. Just don't forget all paradises have their negatives.",
+    "icon": "minecraft:sunflower",
+    "impact": 1,
+    "powers": [
+        "modifier:sn_photosynthesis"
+    ],
+    "unchoosable": false
+}

@@ -1,0 +1,42 @@
+{
+    "type": "origins:multiple",
+    "name": "Darksight",
+    "description": "Sight in the deep sea is less of a challenge to a resident of the biome. Unless the required task demands colorsight.",
+    "sight": {
+        "type": "origins:night_vision",
+        "strength": 0.35,
+        "condition": {
+            "type": "origins:and",
+            "conditions": [{
+                "type": "origins:brightness",
+                "comparison": "<",
+                "compare_to": 0.085
+            }, {
+                "type": "origins:submerged_in",
+                "fluid": "minecraft:water"
+            }]
+        }
+    },
+    "desaturate": {
+        "type": "origins:shader",
+        "shader": "minecraft:shaders/post/desaturate.json",
+        "condition": {
+            "type": "origins:and",
+            "conditions": [{
+                "type": "origins:brightness",
+                "comparison": "<",
+                "compare_to": 0.085
+            }, {
+                "type": "origins:submerged_in",
+                "fluid": "minecraft:water"
+            }, {
+                "type": "origins:in_block",
+                "block_condition": {
+                    "type": "origins:height",
+                    "comparison": "<",
+                    "compare_to": 40
+                }
+            }]
+        }
+    }
+}

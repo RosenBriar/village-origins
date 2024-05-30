@@ -1,0 +1,17 @@
+{
+    "type": "origins:stacking_status_effect",
+    "min_stacks": -1,
+    "max_stacks": 18,
+    "duration_per_stack": 200,
+    "tick_rate": 20,
+    "effect": {
+        "effect": "minecraft:water_breathing",
+        "show_particles": false,
+        "show_icon": true
+    },
+    "condition": {
+        "type": "origins:submerged_in",
+        "fluid": "minecraft:water"
+    },
+    "hidden": true
+}

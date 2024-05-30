@@ -8,5 +8,5 @@
         "modifier:lv_shine",
         "modifier:lv_lover"
     ],
-    "unchoosable": true
+    "unchoosable": false
 }

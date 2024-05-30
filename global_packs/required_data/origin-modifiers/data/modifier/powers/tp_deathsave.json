@@ -1,0 +1,64 @@
+{
+    "name": "Second Wind",
+    "description": "When your health hits zero, regain some health, a temporary resistance buff, and emit a small explosion.",
+    "type": "origins:multiple",
+    "cooldown": {
+        "type": "origins:cooldown",
+        "cooldown": 18000,
+        "hud_render": {
+            "sprite_location": "minecraft:textures/guis/unique/resource_bar_1.png",
+            "bar_index": 5
+        }
+    },
+    "second_wind": {
+        "type": "origins:prevent_death",
+        "condition": {
+            "type": "origins:resource",
+            "resource": "*:*_cooldown",
+            "comparison": "==",
+            "compare_to": 0
+        },
+        "entity_action": {
+            "type": "origins:and",
+            "actions": [{
+                "type": "origins:clear_effect"
+            }, {
+                "type": "origins:apply_effect",
+                "effects": [{
+                    "effect": "minecraft:resistance",
+                    "amplifier": 1,
+                    "duration": 100
+                }, {
+                    "effect": "minecraft:regeneration",
+                    "amplifier": 2,
+                    "duration": 60
+                }]
+            }, {
+                "type": "origins:trigger_cooldown",
+                "power": "*:*_cooldown"
+            }, {
+                "type": "origins:explode",
+                "power": 2,
+                "destruction_type": "none",
+                "damage_self": false,
+                "create_fire": false
+            }, {
+                "type": "origins:spawn_particles",
+                "particle": {
+                    "type": "minecraft:flash"
+                },
+                "count": 4,
+                "force": true,
+                "spread": {
+                    "x": 0.35,
+                    "y": 0.5,
+                    "z": 0.35
+                }
+            }]
+        }
+    },
+    "badges": [{
+        "sprite": "minecraft:textures/item/clock_12.png",
+        "text": "Can only activate once every fifteen minutes."
+    }]
+}

@@ -1,0 +1,31 @@
+{
+    "name": "Slippery Hide",
+    "description": "All attacks against you have a 20% chance to slide off you (damage is nullified). You have three less hearts than usual.",
+    "type": "origins:multiple",
+    "weak": {
+        "type": "origins:attribute",
+        "modifier": {
+            "attribute": "minecraft:generic.max_health",
+            "operation": "addition",
+            "value": -6
+        }
+    },
+    "slip": {
+        "type": "origins:modify_damage_taken",
+        "damage_condition": {
+            "type": "origins:attacker"
+        },
+        "condition": {
+            "type": "origins:chance",
+            "chance": 0.2
+        },
+        "modifier": {
+            "operation": "set_total",
+            "value": 0
+        }
+    },
+    "badges": [{
+        "sprite": "minecraft:textures/item/nether_wart.png",
+        "text": "-6 Base Health"
+    }]
+}

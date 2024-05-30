@@ -1,0 +1,19 @@
+{
+    "name": "Forbidden Magic",
+    "description": "Due to your natural ability to escape death, you are unable to use totems of undying.",
+    "type": "origins:self_action_when_hit",
+    "entity_action": {
+        "type": "origins:drop_inventory",
+        "slots": [
+            "weapon.offhand",
+            "weapon.mainhand"
+        ],
+        "item_condition": {
+            "type": "origins:ingredient",
+            "ingredient": {
+                "item": "minecraft:totem_of_undying"
+            }
+        }
+    },
+    "cooldown": 10
+}

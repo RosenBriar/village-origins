@@ -1,0 +1,11 @@
+{
+    "name": "The Temperance",
+    "description": "A tsunami of the world's troubles holds nothing to a sound mind.",
+    "icon": "minecraft:heart_of_the_sea",
+    "impact": 3,
+    "powers": [
+        "modifier:tp_deathsave",
+        "modifier:tp_totemdrop"
+    ],
+    "unchoosable": false
+}

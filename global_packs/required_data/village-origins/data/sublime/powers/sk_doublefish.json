@@ -1,0 +1,24 @@
+{
+    "hidden": true,
+    "type": "origins:multiple",
+    "doublecod": {
+        "type": "origins:replace_loot_table",
+        "replace": {
+            "minecraft:entities/cod": "sublime:entities/sk_cod"
+        },
+        "priority": 1
+    },
+    "doublesalmon": {
+        "type": "origins:replace_loot_table",
+        "replace": {
+            "minecraft:entities/salmon": "human:entities/sk_salmon"
+        },
+        "priority": 1
+    },
+    "miningfatigue": {
+        "type": "origins:effect_immunity",
+        "effects": [
+            "minecraft:mining_fatigue"
+        ]
+    }
+}

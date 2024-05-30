@@ -3,13 +3,14 @@
     "name": "Darksight",
     "description": "You can see in the dark as if it were lit normally, but in these conditions, the world appears desaturated.",
     "sight": {
-        "type": "origins:stacking_status_effect",
+        "type": "origins:night_vision",
+        "strength": 0.8,
         "condition": {
             "type": "origins:and",
             "conditions": [{
                 "type": "origins:brightness",
-                "comparison": "<=",
-                "compare_to": 0.4
+                "comparison": "<",
+                "compare_to": 0.14
             }, {
                 "type": "origins:or",
                 "conditions": [{
@@ -20,15 +21,6 @@
                     "inverted": true
                 }]
             }]
-        },
-        "tick_rate": 20,
-        "min_stacks": 0,
-        "max_stacks": 2,
-        "duration_per_stack": 30,
-        "effect": {
-            "effect": "minecraft:night_vision",
-            "is_ambient": true,
-            "show_icon": false
         }
     },
     "desaturate": {

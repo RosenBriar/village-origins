@@ -1,0 +1,10 @@
+{
+    "name": "The Moon",
+    "description": "The moonlight is your natural habitat, empowering you as you bask under it.",
+    "icon": "minecraft:calcite",
+    "impact": 1,
+    "powers": [
+        "modifier:mn_speed"
+    ],
+    "unchoosable": false
+}

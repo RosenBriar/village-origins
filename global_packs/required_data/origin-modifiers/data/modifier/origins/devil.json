@@ -1,0 +1,10 @@
+{
+    "name": "The Devil",
+    "description": "You don't have much going for you. At least you still have luck on your side.",
+    "icon": "minecraft:gold_ingot",
+    "impact": 2,
+    "powers": [
+        "modifier:dv_luck"
+    ],
+    "unchoosable": false
+}

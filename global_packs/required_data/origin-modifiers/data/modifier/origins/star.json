@@ -1,0 +1,10 @@
+{
+    "name": "The Star",
+    "description": "Your light cannot be vanquished by any known force. Let it shine so bright the heavens must cover their eyes.",
+    "icon": "minecraft:glowstone_dust",
+    "impact": 2,
+    "powers": [
+        "modifier:st_shine"
+    ],
+    "unchoosable": false
+}

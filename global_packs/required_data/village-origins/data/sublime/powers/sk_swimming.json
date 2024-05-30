@@ -1,0 +1,13 @@
+{
+    "name": "Water Adept",
+    "description": "No one can contest your mobility under the ocean's waves.",
+    "type": "origins:modify_swim_speed",
+    "modifier": {
+        "operation": "addition",
+        "value": 0.035
+    },
+    "condition": {
+        "type": "origins:sneaking",
+        "inverted": true
+    }
+}

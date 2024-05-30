@@ -1,0 +1,22 @@
+{
+    "name": "Night Walking",
+    "description": "Your body feels like fluid in the dark conditions of the night. You move slightly faster under the moon.",
+    "type": "origins:modify_velocity",
+    "modifier": {
+      "value": 0.1,
+      "operation": "multiply_total"
+    },
+    "axes": [
+      "x",
+      "z"
+    ],
+    "condition": {
+        "type": "origins:and",
+        "conditions": [{
+            "type": "origins:exposed_to_sky"
+        }, {
+            "type": "origins:daytime",
+            "inverted": true
+        }]
+    }
+}  

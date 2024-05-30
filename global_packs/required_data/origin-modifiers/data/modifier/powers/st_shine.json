@@ -1,0 +1,24 @@
+{
+    "name": "Piercing Light",
+    "description": "Your light is so intense, entities around you all glow.",
+    "type": "origins:multiple",
+    "other": {
+        "type": "origins:entity_glow",
+        "bientity_condition": {
+            "type": "origins:distance",
+            "comparison": "<=",
+            "compare_to": 32
+        },
+        "use_teams": false,
+        "red": 0.92578125,
+        "green": 0.89453125,
+        "blue": 0.54296875
+    },
+    "self": {
+        "type": "origins:self_glow",
+        "use_teams": false,
+        "red": 0.92578125,
+        "green": 0.89453125,
+        "blue": 0.54296875
+    }
+}

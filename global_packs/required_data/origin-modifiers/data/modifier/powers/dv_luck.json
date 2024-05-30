@@ -1,0 +1,10 @@
+{
+    "name": "Devil's Luck",
+    "description": "You're slightly luckier. Maybe you got an underworldly demon looking out for you. Maybe the heavens enjoy watching you. Maybe you just stumbled on a small boon.",
+    "type": "origins:attribute",
+    "modifier": {
+        "attribute": "minecraft:generic.luck",
+        "value": 1,
+        "operation": "addition"
+    }
+}

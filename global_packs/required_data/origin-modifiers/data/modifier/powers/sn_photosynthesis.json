@@ -1,0 +1,13 @@
+{
+    "name": "Photosynthesis",
+    "description": "The sun fuels your body, keeping you energized. Reduces your exhaustion rates during the day (when you can see the sun).",
+    "type": "origins:modify_exhaustion",
+    "modifier": {
+        "name": "Decreased exhaustion",
+        "operation": "multiply_base",
+        "value": 0.8
+    },
+    "condition": {
+        "type": "origins:exposed_to_sun"
+    }
+}

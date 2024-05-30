@@ -1,0 +1,11 @@
+{
+    "type": "origins:prevent_item_use",
+    "name": "Fearsome Predator",
+    "description": "Despite your lovely appearance, you are an apex predator of the sea. Cod and Salmon sometimes drop double.",
+    "item_condition": {
+        "type": "origins:ingredient",
+        "ingredient": {
+            "tag": "general:landlovers"
+        }
+    }
+}

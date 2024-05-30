@@ -1,0 +1,21 @@
+{
+    "name": "Selkie",
+    "description": "Spirit of the ocean, take me away...",
+    "icon": "minecraft:cod",
+    "impact": 3,
+    "powers": [
+        "sublime:all_sublime",
+        "origins:aquatic",
+        "origins:water_breathing",
+        "origins:aqua_affinity",
+        "sublime:sk_swimming",
+        "sublime:sk_dive",
+        "sublime:sk_darksight",
+        "sublime:sk_slippery",
+        "sublime:sk_leap",
+        "sublime:sk_breathe",
+        "sublime:sk_diet",
+        "sublime:sk_doublefish",
+        "sublime:sk_lightarmor"
+    ]
+}

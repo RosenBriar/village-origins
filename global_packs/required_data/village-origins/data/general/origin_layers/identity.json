@@ -12,7 +12,8 @@
         "unique:harpy",
         "human:trailblazer",
         "sublime:moonchild",
-        "sublime:watcher"
+        "sublime:watcher",
+        "sublime:selkie"
     ],
     "gui_title": {
         "choose_origin": "What is your Identity?",

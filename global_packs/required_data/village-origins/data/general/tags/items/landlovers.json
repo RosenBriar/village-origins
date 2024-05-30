@@ -1,0 +1,33 @@
+{
+    "replace": true,
+    "values": [
+        "minecraft:apple",
+        "minecraft:golden_apple",
+        "minecraft:enchanted_golden_apple",
+        "minecraft:melon_slice",
+        "minecraft:sweet_berries",
+        "minecraft:glow_berries",
+        "minecraft:chorus_fruit",
+        "minecraft:carrot",
+        "minecraft:golden_carrot",
+        "minecraft:potato",
+        "minecraft:baked_potato",
+        "minecraft:poisonous_potato",
+        "minecraft:beetroot",
+        "minecraft:dried_kelp",
+        "minecraft:bread",
+        "minecraft:cookie",
+        "minecraft:pumpkin_pie",
+        "minecraft:mushroom_stew",
+        "minecraft:beetroot_soup",
+        "minecraft:rabbit_stew",
+        "minecraft:rotten_flesh",
+        "minecraft:spider_eye",
+        
+        "additionaladditions:fried_egg",
+        "additionaladditions:chicken_nugget",
+        "additionaladditions:berry_pie",
+        "legacies_and_legends:bottomless_beetroot",
+        "legacies_and_legends:bottomless_beetroot_soup"
+    ]
+}

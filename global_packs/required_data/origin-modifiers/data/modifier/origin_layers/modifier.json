@@ -3,7 +3,12 @@
     "missing_name": "None",
     "missing_description": "Modifiers are minor differences that make you unique compared to your kin.",
     "origins": [
-        "modifier:lovers"
+        "modifier:lovers",
+        "modifier:star",
+        "modifier:sun",
+        "modifier:moon",
+        "modifier:devil",
+        "modifier:temperance"
     ],
     "gui_title": {
         "choose_origin": "What is your Modifier?",

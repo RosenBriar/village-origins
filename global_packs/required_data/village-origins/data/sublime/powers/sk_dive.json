@@ -1,0 +1,20 @@
+{
+    "hidden": true,
+    "type": "origins:modify_velocity",
+    "modifier": {
+        "value": 0.5,
+        "operation": "multiply_total"
+      },
+    "axes": [
+      "y"
+    ],
+    "condition": {
+        "type": "origins:and",
+        "conditions": [{
+            "type": "origins:swimming"
+        }, {
+            "type": "origins:submerged_in",
+            "fluid": "minecraft:water"
+        }]
+    }
+}
